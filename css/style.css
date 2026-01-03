@@ -1348,3 +1348,14 @@ overflow: hidden;
     border-radius: 4px;
     color: var(--color-primary);
 }
+/* Mobile Hero Fix */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 0 1rem;
+    }
+    .hero-title {
+        font-size: 13vw;
+        line-height: 0.9;
+        word-break: break-word;
+    }
+}
