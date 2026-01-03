@@ -1,0 +1,149 @@
+/* Maharaja Theme - Luxurious & Classic */
+:root {
+    --color-bg: #0a0500;
+    --color-text: #f0e6d2;
+    --color-primary: #d4af37;
+    /* Gold */
+    --color-secondary: #800020;
+    /* Deep Burgundy */
+    --color-accent: #ffd700;
+    --glass-bg: rgba(20, 10, 5, 0.85);
+    --glass-border: 1px solid rgba(212, 175, 55, 0.3);
+    --font-heading: 'Times New Roman', serif;
+    --font-body: 'Noto Serif JP', serif;
+}
+
+body {
+    background: var(--color-bg);
+    background-image: radial-gradient(circle at 50% 50%, #1a0f00 0%, #000000 100%);
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+
+.header {
+    background: linear-gradient(to bottom, #000 0%, rgba(20, 10, 0, 0.9) 100%);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.logo a {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.logo .highlight {
+    color: #fff;
+}
+
+/* Navigation Overrides */
+.nav-list a {
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    /* Ensure no background interference from base theme */
+    background: transparent;
+}
+
+/* Disable the 'double text' hover effect from base theme */
+.nav-list a::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Simple Gold Underline Effect */
+.nav-list a::after {
+    background: var(--color-primary);
+    height: 1px;
+    bottom: 0;
+}
+
+.nav-list a:hover {
+    color: var(--color-primary) !important;
+    background: transparent !important;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    background: linear-gradient(to right, #cfc09f, #ffecb3, #d4af37, #c5a028);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-style: italic;
+}
+
+/* Glass Panels -> Luxurious Cards */
+.glass-panel,
+.glass-card,
+.product-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.btn-primary,
+.cta-button {
+    background: linear-gradient(45deg, #d4af37, #f7e698, #d4af37);
+    color: #000;
+    border: 1px solid #fff;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.btn-primary:hover,
+.cta-button:hover {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Price Table Override */
+.price-table th {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+}
+
+/* Shop Layout */
+.product-card {
+    border-radius: 4px;
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+.card-price {
+    color: var(--color-accent);
+}
+
+/* Footer */
+.footer {
+    border-top: 2px solid var(--color-primary);
+    background: #050300;
+}
+
+/* Theme Switcher Style */
+.theme-switcher select {
+    background: #000;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+/* Navigation Fixes */
+.nav-list a::before {
+    content: none !important; /* Disable double text effect from base theme */
+}
+
+.nav-list a:hover {
+    background: transparent !important; /* Prevent yellow block */
+    color: var(--color-primary);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+}
