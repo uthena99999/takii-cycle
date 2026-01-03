@@ -1368,3 +1368,9 @@ overflow: hidden;
         white-space: normal;
     }
 }
+/* Bento Grid Padding Fix */
+@media (max-width: 1200px) {
+    .bento-content {
+        padding: 1.5rem;
+    }
+}
