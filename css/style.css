@@ -1391,3 +1391,15 @@ overflow: hidden;
     border: 0;
     filter: grayscale(100%) invert(92%) contrast(83%); /* Dark mode map style */
 }
+
+/* Hero Outline Text Style */
+.outline-text {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+    display: inline-block;
+}
+
+/* Adjust Hero Vertical Position */
+.hero-content {
+    margin-top: 8vh; /* Move down as requested */
+}
