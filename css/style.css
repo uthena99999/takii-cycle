@@ -624,7 +624,9 @@ h4 {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+
+    /* Increased from 1024px */
     .bento-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -1368,6 +1370,7 @@ overflow: hidden;
         white-space: normal;
     }
 }
+
 /* Bento Grid Padding Fix */
 @media (max-width: 1200px) {
     .bento-content {
