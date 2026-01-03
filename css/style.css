@@ -1403,3 +1403,33 @@ overflow: hidden;
 .hero-content {
     margin-top: 8vh; /* Move down as requested */
 }
+
+/* Map Layout Refinement */
+.info-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.info-content {
+    grid-column: 1;
+}
+
+.info-hours {
+    grid-column: 2;
+}
+
+.map-container {
+    grid-column: 1 / -1; /* Span full width */
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .info-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .info-content, .info-hours, .map-container {
+        grid-column: auto;
+    }
+}
