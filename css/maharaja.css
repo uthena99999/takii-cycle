@@ -29,98 +29,75 @@ body {
     font-family: var(--font-heading);
     color: var(--color-primary);
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
-}
 
-.logo .highlight {
-    color: #fff;
-}
+    .glass-panel,
+    .glass-card,
+    .product-card {
+        background: var(--glass-bg);
+        border: 1px solid var(--color-primary);
+        box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+    }
 
-/* Navigation Overrides */
-.nav-list a {
-    font-family: var(--font-heading);
-    color: var(--color-text);
-    /* Ensure no background interference from base theme */
-    background: transparent;
-}
+    .btn-primary,
+    .cta-button {
+        background: linear-gradient(45deg, #d4af37, #f7e698, #d4af37);
+        color: #000;
+        border: 1px solid #fff;
+        font-family: var(--font-heading);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
 
-    background: linear-gradient(to right, #cfc09f, #ffecb3, #d4af37, #c5a028);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom: 2px solid var(--color-primary);
-    display: inline-block;
-    padding-bottom: 1rem;
-}
+    .btn-primary:hover,
+    .cta-button:hover {
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+        transform: translateY(-2px);
+    }
 
-.hero-subtitle {
-    font-style: italic;
-}
+    /* Price Table Override */
+    .price-table th {
+        border-bottom: 2px solid var(--color-primary);
+        color: var(--color-primary);
+        font-family: var(--font-heading);
+    }
 
-/* Glass Panels -> Luxurious Cards */
-.glass-panel,
-.glass-card,
-.product-card {
-    background: var(--glass-bg);
-    border: 1px solid var(--color-primary);
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
-}
+    /* Shop Layout */
+    .product-card {
+        border-radius: 4px;
+    }
 
-.btn-primary,
-.cta-button {
-    background: linear-gradient(45deg, #d4af37, #f7e698, #d4af37);
-    color: #000;
-    border: 1px solid #fff;
-    font-family: var(--font-heading);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
+    .card-title {
+        font-family: var(--font-heading);
+        color: var(--color-primary);
+    }
 
-.btn-primary:hover,
-.cta-button:hover {
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
-    transform: translateY(-2px);
-}
+    .card-price {
+        color: var(--color-accent);
+    }
 
-/* Price Table Override */
-.price-table th {
-    border-bottom: 2px solid var(--color-primary);
-    color: var(--color-primary);
-    font-family: var(--font-heading);
-}
+    /* Footer */
+    .footer {
+        border-top: 2px solid var(--color-primary);
+        background: #050300;
+    }
 
-/* Shop Layout */
-.product-card {
-    border-radius: 4px;
-}
+    /* Theme Switcher Style */
+    .theme-switcher select {
+        background: #000;
+        color: var(--color-primary);
+        border: 1px solid var(--color-primary);
+    }
 
-.card-title {
-    font-family: var(--font-heading);
-    color: var(--color-primary);
-}
+    /* Navigation Fixes */
+    .nav-list a::before {
+        content: none !important;
+        /* Disable double text effect from base theme */
+    }
 
-.card-price {
-    color: var(--color-accent);
-}
-
-/* Footer */
-.footer {
-    border-top: 2px solid var(--color-primary);
-    background: #050300;
-}
-
-/* Theme Switcher Style */
-.theme-switcher select {
-    background: #000;
-    color: var(--color-primary);
-    border: 1px solid var(--color-primary);
-}
-/* Navigation Fixes */
-.nav-list a::before {
-    content: none !important; /* Disable double text effect from base theme */
-}
-
-.nav-list a:hover {
-    background: transparent !important; /* Prevent yellow block */
-    color: var(--color-primary);
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
-}
+    .nav-list a:hover {
+        background: transparent !important;
+        /* Prevent yellow block */
+        color: var(--color-primary);
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+    }
