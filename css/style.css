@@ -458,11 +458,12 @@ h4 {
 }
 
 .bento-item h3 {
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.2vw, 2rem);
     /* Responsive sizing */
     margin-bottom: 0.5rem;
-    word-break: break-word;
-    /* Ensure wrapping */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .bento-item p {
