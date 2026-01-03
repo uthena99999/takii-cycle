@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP | TAKII CYCLE</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚲</text></svg>">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">TAKII<span class="highlight">CYCLE</span></a>
+            <span class="since">SINCE 1919</span>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="shop.html" data-text="Shop">Shop</a></li>
+                <li><a href="repair.html" data-text="Repair">Repair</a></li>
+                <li><a href="delivery.html" data-text="Delivery">Delivery</a></li>
+                <li><a href="keys.html" data-text="Keys">Keys</a></li>
+                <li><a href="other.html" data-text="About">About</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main class="shop-main">
+        <section class="shop-header">
+            <h1 class="fade-in-up">SHOP</h1>
+            <p class="fade-in-up delay-1">Premium Bikes for Your Lifestyle</p>
+        </section>
+
+        <section class="shop-container container">
+            <!-- Filter -->
+            <div class="filter-wrapper fade-in-up delay-2">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="city">City</button>
+                <button class="filter-btn" data-category="commuter">Commuter</button>
+                <button class="filter-btn" data-category="ebike">E-Bike</button>
+                <button class="filter-btn" data-category="sport">Sport</button>
+                <button class="filter-btn" data-category="cargo">Cargo</button>
+                <button class="filter-btn" data-category="kids">Kids</button>
+                <button class="filter-btn" data-category="sale"
+                    style="color: #ff4444; border-color: #ff4444;">Sale</button>
+                <button class="filter-btn" data-category="secondhand">Used</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be injected here via JS -->
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer section-padding">
+        <div class="container text-center">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 1919-2026 TAKII CYCLE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Loaded sequentially/synchronously for file:// compatibility) -->
+    <script src="js/products.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if scripts loaded
+            if (!window.products) {
+                console.error('Core scripts failed to load');
+                return;
+            }
+
+            // DOM Elements
+            const grid = document.getElementById('productGrid');
+            const filters = document.querySelectorAll('.filter-btn');
+
+            // Render Products
+            function renderProducts(category = 'all') {
+                grid.innerHTML = '';
+
+                const filtered = category === 'all'
+                    ? window.products
+                    : window.products.filter(p => p.category === category);
+
+                filtered.forEach((product, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'product-card fade-in-up';
+                    card.style.animationDelay = `${index * 0.1}s`; // Staggered animation
+
+                    card.innerHTML = `
+                        <div class="card-image">
+                            <img src="${product.image}" alt="${product.name}">
+                            <div class="card-overlay">
+                                
+                            </div>
+                            ${product.category === 'sale' ? '<div style="position:absolute;top:10px;right:10px;background:#ff4444;color:#fff;padding:4px 8px;border-radius:4px;font-weight:bold;font-size:0.8rem;">SALE</div>' : ''}
+                        </div>
+                        <div class="card-info">
+                            <span class="card-brand">${product.brand}</span>
+                            <h3 class="card-title">${product.name}</h3>
+                            <p class="card-desc">${product.description}</p>
+                            <div class="card-meta">
+                                <div>
+                                    ${product.originalPrice ? `<span style="text-decoration:line-through;color:#666;font-size:0.9rem;">¥${product.originalPrice.toLocaleString()}</span>` : ''}
+                                    <span class="card-price" style="${product.category === 'sale' ? 'color:#ff4444' : ''}">¥${product.price.toLocaleString()}</span>
+                                </div>
+                                ${product.category === 'ebike' ? '<span class="badge">Electric</span>' : ''}
+                                ${product.category === 'secondhand' ? '<span class="badge">Used</span>' : ''}
+                            </div>
+                        </div>
+                    `;
+
+
+                    grid.appendChild(card);
+                });
+
+                // Re-trigger animations
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) entry.target.classList.add('visible');
+                    });
+                });
+                document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+            }
+
+            // Filter Event
+            filters.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filters.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    renderProducts(btn.dataset.category);
+                });
+            });
+
+            // Initial Render
+            renderProducts();
+
+            // Mobile Menu & Cursor (Simplified version of main.js)
+            const cursorDot = document.querySelector('.cursor-dot');
+            const cursorOutline = document.querySelector('.cursor-outline');
+            if (cursorDot && cursorOutline) {
+                window.addEventListener('mousemove', (e) => {
+                    cursorDot.style.left = `${e.clientX}px`;
+                    cursorDot.style.top = `${e.clientY}px`;
+                    cursorOutline.animate({
+                        left: `${e.clientX}px`,
+                        top: `${e.clientY}px`
+                    }, { duration: 500, fill: "forwards" });
+                });
+            }
+
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.nav');
+            if (hamburger) {
+                hamburger.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>

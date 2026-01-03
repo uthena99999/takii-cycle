@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPAIR | TAKII CYCLE</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+
+<body class="theme-urban-tech">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="header glass-header">
+        <div class="logo">
+            <a href="index.html">TAKII<span class="highlight">CYCLE</span></a>
+            <span class="since">SINCE 1919</span>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="shop.html" data-text="Shop">Shop</a></li>
+                <li><a href="repair.html" data-text="Repair" class="active">Repair</a></li>
+                <li><a href="delivery.html" data-text="Delivery">Delivery</a></li>
+                <li><a href="keys.html" data-text="Keys">Keys</a></li>
+                <li><a href="other.html" data-text="About">About</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main class="shop-main">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h1 class="section-title">REPAIR</h1>
+                <p class="hero-subtitle">プロフェッショナルの技術を。<br>他店購入車も歓迎します。</p>
+            </div>
+
+            <!-- Repair Menu Grid -->
+            <div class="support-grid">
+                <!-- Tire Repair -->
+                <div class="glass-card fade-in-up delay-1">
+                    <div class="icon-box">🔧</div>
+                    <h3>Tire Repair</h3>
+                    <p>パンク修理・タイヤ交換</p>
+                    <div class="price-list">
+                        <div class="price-row">
+                            <span>パンク修理</span>
+                            <span>¥1,200 ~</span>
+                        </div>
+                        <div class="price-row">
+                            <span>タイヤ・チューブ交換</span>
+                            <span>¥3,500 ~</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maintenance -->
+                <div class="glass-card fade-in-up delay-2">
+                    <div class="icon-box">⚙️</div>
+                    <h3>Maintenance</h3>
+                    <p>調整・点検・整備</p>
+                    <div class="price-list">
+                        <div class="price-row">
+                            <span>ブレーキ調整</span>
+                            <span>¥1,000 ~</span>
+                        </div>
+                        <div class="price-row">
+                            <span>チェーン調整</span>
+                            <span>¥1,000 ~</span>
+                        </div>
+                        <div class="price-row">
+                            <span>TSマーク点検</span>
+                            <span>¥2,200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overhaul -->
+                <div class="glass-card fade-in-up delay-3">
+                    <div class="icon-box">🚲</div>
+                    <h3>Overhaul</h3>
+                    <p>フルメンテナンス</p>
+                    <div class="price-list">
+                        <div class="price-row">
+                            <span>簡易オーバーホール</span>
+                            <span>要見積もり</span>
+                        </div>
+                        <div class="price-row">
+                            <span>レストア</span>
+                            <span>要相談</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center fade-in-up delay-3" style="margin-top: 4rem;">
+                <p class="text-muted">※価格は全て税込です。<br>部品代は別途かかります。車種・状態により変動します。</p>
+                <a href="delivery.html" class="btn-main" style="margin-top: 2rem;">DELIVERY SERVICE <span
+                        class="arrow">→</span></a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="copyright">&copy; 2026 TAKII CYCLE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <style>
+        .price-list {
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.95rem;
+        }
+
+        .text-muted {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+
+</html>
