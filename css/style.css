@@ -638,9 +638,7 @@ h4 {
         height: 350px;
     }
 
-    .hero-title {
-        font-size: 15vw;
-    }
+    /* .hero-title override removed to prevent size jump */
 }
 
 @media (max-width: 768px) {
