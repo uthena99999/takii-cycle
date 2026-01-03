@@ -43,29 +43,6 @@ body {
     background: transparent;
 }
 
-/* Disable the 'double text' hover effect from base theme */
-.nav-list a::before {
-    content: none !important;
-    display: none !important;
-}
-
-/* Simple Gold Underline Effect */
-.nav-list a::after {
-    background: var(--color-primary);
-    height: 1px;
-    bottom: 0;
-}
-
-.nav-list a:hover {
-    color: var(--color-primary) !important;
-    background: transparent !important;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
-}
-
-.hero-title {
-    font-family: var(--font-heading);
-    color: var(--color-primary);
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     background: linear-gradient(to right, #cfc09f, #ffecb3, #d4af37, #c5a028);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
