@@ -77,11 +77,11 @@ body.theme-disney::before {
 .theme-disney .hero {
     height: auto !important;
     /* Override style.css 100vh */
-    min-height: 150vh;
+    min-height: 110vh;
     /* Ensure tall canvas */
-    padding-bottom: 350px;
+    padding-bottom: 150px;
     /* Ensure clearance */
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     /* Extra separation */
     display: flex;
     flex-direction: column;
