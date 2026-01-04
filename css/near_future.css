@@ -1,0 +1,207 @@
+/* Near Future / Cyberpunk Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600&display=swap');
+
+body.theme-near_future {
+    font-family: 'Rajdhani', sans-serif !important;
+    background-color: #050505;
+    color: #0ff;
+    /* Cyan */
+    background-image:
+        linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    overflow-x: hidden;
+}
+
+/* Glitch Effect Helper */
+@keyframes glitch-anim {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* Header */
+.theme-near_future .header {
+    background: rgba(5, 5, 5, 0.9);
+    border-bottom: 1px solid #0ff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.theme-near_future .logo a {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+    letter-spacing: 2px;
+}
+
+.theme-near_future .logo .highlight {
+    color: #f0f;
+    /* Magenta */
+    text-shadow: 0 0 5px #f0f;
+}
+
+.theme-near_future .nav-list a {
+    color: #aaa;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.theme-near_future .nav-list a:hover {
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff;
+    background: rgba(0, 255, 255, 0.1);
+}
+
+/* Hero */
+.theme-near_future .hero-bg img {
+    filter: contrast(1.2) hue-rotate(180deg) brightness(0.8);
+}
+
+.theme-near_future .hero-overlay {
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 90%);
+}
+
+.theme-near_future .hero-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    text-shadow: 2px 0 #f0f, -2px 0 #0ff;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    display: inline-block;
+}
+
+.theme-near_future .hero-subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    color: #0ff;
+    background: rgba(0, 0, 0, 0.8);
+    border-left: 3px solid #f0f;
+    padding: 10px;
+}
+
+.theme-near_future .btn-main {
+    background: transparent;
+    color: #0ff;
+    border: 1px solid #0ff;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.theme-near_future .btn-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.2);
+    transition: left 0.3s;
+}
+
+.theme-near_future .btn-main:hover::before {
+    left: 0;
+}
+
+.theme-near_future .btn-main:hover {
+    box-shadow: 0 0 20px #0ff;
+}
+
+/* Bento Grid - HUD Style */
+.theme-near_future .section-title {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    border: 1px solid #f0f;
+    padding: 5px 20px;
+    background: rgba(255, 0, 255, 0.1);
+}
+
+.theme-near_future .bento-item {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid #333;
+    border-left: 3px solid #0ff;
+    border-radius: 0;
+}
+
+.theme-near_future .bento-item:hover {
+    border-left: 3px solid #f0f;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+.theme-near_future .bento-item h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.theme-near_future .bento-label {
+    background: transparent;
+    border: 1px solid #0ff;
+    color: #0ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    border-radius: 0;
+}
+
+/* Support */
+.theme-near_future .support {
+    background: #000;
+    border-top: 1px solid #111;
+}
+
+.theme-near_future .support-card {
+    background: #080808;
+    border: 1px solid #222;
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.theme-near_future .icon-box {
+    color: #f0f;
+    text-shadow: 0 0 5px #f0f;
+    background: transparent;
+    border: 1px solid #f0f;
+    border-radius: 0;
+}
+
+/* Footer */
+.theme-near_future .footer {
+    background: #020202;
+    border-top: 1px solid #333;
+    color: #555;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* Cursor */
+.theme-near_future .cursor-dot {
+    background-color: #0ff;
+    box-shadow: 0 0 5px #0ff;
+}
+
+.theme-near_future .cursor-outline {
+    border-color: #f0f;
+    box-shadow: 0 0 5px #f0f;
+}

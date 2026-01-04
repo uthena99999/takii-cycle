@@ -1,0 +1,224 @@
+/* Disney / Fairytale Inspired Theme */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Great+Vibes&display=swap');
+
+body.theme-disney {
+    font-family: 'Cinzel', serif !important;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    /* Deep magical gradient */
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    /* Night sky */
+    color: #ecf0f1;
+    overflow-x: hidden;
+}
+
+/* Sparkles (Pseudoelement simulation) */
+body.theme-disney::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 3px),
+        radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 2px),
+        radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 3px);
+    background-size: 550px 550px, 350px 350px, 250px 250px;
+    background-position: 0 0, 40px 60px, 130px 270px;
+    pointer-events: none;
+    z-index: -1;
+    animation: twinkle 10s linear infinite;
+}
+
+@keyframes twinkle {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-300px);
+    }
+}
+
+/* Header */
+.theme-disney .header {
+    background: rgba(15, 32, 39, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    /* Gold tint */
+}
+
+.theme-disney .logo a {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #ffd700;
+    /* Gold */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.theme-disney .nav-list a {
+    color: #e0e0e0;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.theme-disney .nav-list a:hover {
+    color: #ffd700;
+    text-shadow: 0 0 8px #ffd700;
+}
+
+/* Hero */
+filter: brightness(0.7) contrast(1.2) hue-rotate(-10deg);
+}
+
+/* Fix Hero Overlap - CRITICAL OVERRIDES */
+.theme-disney .hero {
+    height: auto !important;
+    /* Override style.css 100vh */
+    min-height: 140vh;
+    /* Ensure tall canvas */
+    padding-bottom: 250px;
+    /* Ensure clearance */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    /* Allow content to flow */
+}
+
+.theme-disney .hero-title {
+    font-family: 'Cinzel', serif;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(135, 206, 250, 0.8);
+    /* Light blue glow */
+    letter-spacing: 5px;
+    padding-top: 100px;
+    /* Prevent overlap with header */
+    margin-bottom: 30px;
+}
+
+.theme-disney .hero-title .outline-text {
+    -webkit-text-stroke: 1px #87cefa;
+    color: transparent;
+    text-shadow: none;
+}
+
+.theme-disney .hero-subtitle {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.theme-disney .btn-main {
+    background: linear-gradient(45deg, #ffd700, #fdb931);
+    color: #0f2027;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.theme-disney .btn-main:hover {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
+    transform: scale(1.05);
+}
+
+/* Services */
+.theme-disney .section-title {
+    color: #ffd700;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.theme-disney .section-title::after {
+    content: '✧';
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    font-size: 1.5rem;
+    color: #87cefa;
+}
+
+.theme-disney .bento-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.theme-disney .bento-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(135, 206, 250, 0.4);
+    border-color: #87cefa;
+}
+
+.theme-disney .bento-item h3 {
+    font-family: 'Cinzel', serif;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme-disney .bento-item p {
+    color: #ddd;
+    font-family: 'Cinzel', serif;
+}
+
+.theme-disney .bento-label {
+    background: transparent;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    font-family: 'Cinzel', serif;
+}
+
+/* Support */
+.theme-disney .support {
+    background: transparent;
+}
+
+.theme-disney .support-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #ffd700;
+    color: #fff;
+}
+
+.theme-disney .icon-box {
+    background: transparent;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #ffd700;
+}
+
+/* Info */
+.theme-disney .info-wrapper {
+    background: rgba(15, 32, 39, 0.9);
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+}
+
+.theme-disney .info-list dt {
+    color: #87cefa;
+    font-family: 'Cinzel', serif;
+}
+
+.theme-disney .info-list dd {
+    color: #fff;
+}
+
+/* Footer */
+.theme-disney .footer {
+    background: #0f2027;
+    border-top: 1px solid #333;
+}
+
+.theme-disney .cursor-dot,
+.theme-disney .cursor-outline {
+    background-color: #ffd700;
+    border-color: #ffd700;
+    box-shadow: 0 0 10px #ffd700;
+}

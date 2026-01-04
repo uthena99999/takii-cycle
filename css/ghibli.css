@@ -1,0 +1,279 @@
+/* Ghibli Inspired Theme */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;800&display=swap');
+
+body.theme-ghibli {
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+    background-color: #f4f7f0;
+    color: #4a5d4e;
+    overflow-x: hidden;
+}
+
+/* Background - Hand painted feel */
+.theme-ghibli .hero-bg img {
+    filter: brightness(1.1) contrast(0.9) saturate(0.8) blur(1px);
+    transform: scale(1.05);
+}
+
+.theme-ghibli .hero-overlay {
+    background: linear-gradient(to bottom, rgba(169, 219, 169, 0.3), rgba(255, 255, 240, 0.6));
+    mix-blend-mode: overlay;
+}
+
+/* Navigation - Wooden sign style or organic */
+.theme-ghibli .header {
+    background: rgba(255, 255, 255, 0.85);
+    border-bottom: 3px solid #8eba8e;
+    box-shadow: 0 4px 10px rgba(107, 142, 35, 0.1);
+    border-radius: 0 0 20px 20px;
+}
+
+.theme-ghibli .nav-list a {
+    color: #556b2f;
+    font-weight: 800;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M0 5 Q 50 10 100 5' stroke='%238eba8e' stroke-width='2' fill='none' /%3E%3C/svg%3E") no-repeat bottom center;
+    background-size: 0% 5px;
+    transition: background-size 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.theme-ghibli .nav-list a:hover {
+    background-size: 100% 5px;
+    color: #3d4d22;
+}
+
+.theme-ghibli .logo a {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #556b2f;
+    text-shadow: 2px 2px 0px #e0ecd0;
+}
+
+.theme-ghibli .logo .highlight {
+    color: #ff9f43;
+    /* Warm orange */
+}
+
+/* Hero Text */
+/* Hero Text */
+.theme-ghibli .hero-title {
+    color: #2f4f4f;
+    -webkit-text-stroke: 1.5px #fff;
+    text-shadow:
+        3px 3px 0 #fff,
+        5px 5px 0 rgba(76, 122, 76, 0.5);
+    font-weight: 900;
+}
+
+.theme-ghibli .hero-subtitle {
+    font-weight: 700;
+    -webkit-text-stroke: 0.5px #fff;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    color: #3d4d22;
+    border: 2px solid #8eba8e;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.theme-ghibli .btn-main {
+    background: #ff7f50;
+    color: #fff;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(255, 127, 80, 0.4);
+    font-weight: 800;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.theme-ghibli .btn-main:hover {
+    background: #ff6347;
+    transform: translateY(-3px) rotate(-1deg);
+}
+
+/* Disable global "slide" effect for this theme */
+.theme-ghibli .btn-main::before {
+    display: none;
+}
+
+/* Bento Grid - Scrapbook feel */
+.theme-ghibli .section-title {
+    color: #fff;
+    -webkit-text-stroke: 1.5px #556b2f;
+    text-shadow: 2px 2px 0 #8eba8e;
+}
+
+.theme-ghibli .bento-item {
+    border-radius: 25px;
+    border: 5px solid #fff;
+    box-shadow:
+        0 8px 0 #dcead0,
+        0 15px 20px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    overflow: hidden;
+}
+
+.theme-ghibli .bento-item h3 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #3d4d22;
+    font-weight: 800;
+}
+
+.theme-ghibli .bento-item p {
+    color: #556b2f;
+    font-weight: 500;
+}
+
+.theme-ghibli .bento-item .bento-label {
+    background: #8eba8e;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+/* Support Section - Clouds */
+.theme-ghibli .support {
+    background: #eef7ee;
+    background-image: radial-gradient(#fff 20%, transparent 20%),
+        radial-gradient(#fff 20%, transparent 20%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+}
+
+/* Fix Readability for Box Content over Images */
+.theme-ghibli .bento-content {
+    background: rgba(255, 255, 255, 0.85);
+    /* Frost to make text readable */
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Fix Shop Page Title and Filters */
+.theme-ghibli .shop-header h1,
+.theme-ghibli .shop-header p {
+    color: #3d4d22;
+    text-shadow: 2px 2px 0 #fff;
+}
+
+.theme-ghibli .filter-btn {
+    color: #556b2f;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #8eba8e;
+    font-weight: 700;
+}
+
+.theme-ghibli .filter-btn:hover,
+.theme-ghibli .filter-btn.active {
+    background: #556b2f;
+    color: #fff;
+}
+
+.theme-ghibli .support-card {
+    background: #fff;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 10px 20px rgba(107, 142, 35, 0.1);
+}
+
+.theme-ghibli .support-card h3 {
+    color: #3d4d22;
+    text-shadow: none;
+}
+
+.theme-ghibli .support-card p {
+    color: #556b2f;
+}
+
+.theme-ghibli .icon-box {
+    background: #e0ecd0;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+/* Footer - Grass footer */
+.theme-ghibli .footer {
+    background: #556b2f;
+    border-top: 10px solid #8eba8e;
+    position: relative;
+}
+
+.theme-ghibli .footer::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background:
+        linear-gradient(135deg, transparent 33%, #8eba8e 33%, #8eba8e 66%, transparent 66%) -10px 0,
+        linear-gradient(45deg, transparent 33%, #8eba8e 33%, #8eba8e 66%, transparent 66%);
+    background-size: 20px 40px;
+}
+
+/* Cursor */
+.theme-ghibli .cursor-dot,
+.theme-ghibli .cursor-outline {
+    background-color: #ff9f43;
+    border-color: #ff9f43;
+    opacity: 0.7;
+}
+
+/* Fix Product Card Text */
+.theme-ghibli .card-title {
+    color: #3d4d22;
+    text-shadow: none;
+}
+
+.theme-ghibli .card-desc {
+    color: #556b2f;
+}
+
+.theme-ghibli .card-price {
+    color: #3d4d22;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+/* Fix Keys Page Table */
+.theme-ghibli .price-table th {
+    color: #3d4d22;
+    border-bottom: 2px solid #8eba8e !important;
+}
+
+.theme-ghibli .price-table td {
+    color: #556b2f;
+    border-bottom: 1px solid #dcead0 !important;
+}
+
+/* Fix inline style specific to remarks column */
+.theme-ghibli .price-table td[style*="color: #ccc"] {
+    color: #556b2f !important;
+}
+
+/* Fix About Page Timeline & Links */
+.theme-ghibli .timeline-item h3,
+.theme-ghibli .timeline-item p {
+    color: #3d4d22 !important;
+}
+
+.theme-ghibli .year {
+    background: #8eba8e;
+    color: #fff;
+    box-shadow: 0 4px 0 #556b2f;
+}
+
+.theme-ghibli .link-tags a {
+    color: #556b2f !important;
+    border-color: #8eba8e !important;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.theme-ghibli .link-tags a:hover {
+    background: #8eba8e !important;
+    color: #fff !important;
+}

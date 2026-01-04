@@ -1,0 +1,164 @@
+/* Taisho Roman / Art Deco - Modern Japanese Theme */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=Shippori+Mincho:wght@400;700;800&display=swap');
+
+body.theme-taisho_roman {
+    font-family: 'Shippori Mincho', serif !important;
+    background-color: #2b1b17;
+    /* Dark coffee */
+    color: #fce4d6;
+}
+
+/* Pattern Overlay - Yagasuri / Art Deco Grid */
+body.theme-taisho_roman::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(45deg, #422a22 25%, transparent 25%, transparent 75%, #422a22 75%, #422a22),
+        linear-gradient(45deg, #422a22 25%, transparent 25%, transparent 75%, #422a22 75%, #422a22);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Header */
+.theme-taisho_roman .header {
+    background: #1a0f0d;
+    border-bottom: 2px solid #c71585;
+    /* MediumVioletRed -> Retro Plum */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.theme-taisho_roman .logo a {
+    font-family: 'Kaisei Decol', serif;
+    color: #e6b422;
+    /* Gold */
+    font-size: 2rem;
+    text-shadow: 2px 2px 0 #551a8b;
+    /* Deep Purple */
+}
+
+.theme-taisho_roman .nav-list a {
+    color: #fce4d6;
+    font-family: 'Kaisei Decol', serif;
+    position: relative;
+}
+
+.theme-taisho_roman .nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #c71585;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.theme-taisho_roman .nav-list a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero */
+.theme-taisho_roman .hero-bg img {
+    filter: sepia(0.3) contrast(1.1) brightness(0.8);
+}
+
+.theme-taisho_roman .hero-title {
+    font-family: 'Kaisei Decol', serif;
+    color: #e6b422;
+    text-shadow:
+        0 0 5px rgba(230, 180, 34, 0.5),
+        3px 3px 0 #330033;
+    letter-spacing: 0.1em;
+}
+
+.theme-taisho_roman .hero-subtitle {
+    background: rgba(43, 27, 23, 0.9);
+    border: 1px solid #c71585;
+    padding: 15px;
+    color: #fce4d6;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.theme-taisho_roman .btn-main {
+    background: #800020;
+    /* Burgundy */
+    color: #fff;
+    border: 1px solid #e6b422;
+    font-family: 'Kaisei Decol', serif;
+    font-weight: 700;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+}
+
+/* Disable global "slide" effect for this theme */
+.theme-taisho_roman .btn-main::before {
+    display: none;
+}
+
+.theme-taisho_roman .btn-main:hover {
+    background: #600018;
+    color: #fff;
+    /* Ensure text visible */
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Bento Grid - Stained Glass Feel */
+.theme-taisho_roman .section-title {
+    color: #c71585;
+    font-family: 'Kaisei Decol', serif;
+    border-bottom: 1px solid #e6b422;
+    border-top: 1px solid #e6b422;
+    padding: 5px 20px;
+}
+
+.theme-taisho_roman .bento-item {
+    background: rgba(26, 15, 13, 0.9);
+    border: 2px solid #330033;
+    outline: 1px solid #e6b422;
+    outline-offset: -5px;
+}
+
+.theme-taisho_roman .bento-item h3 {
+    font-family: 'Kaisei Decol', serif;
+    color: #e6b422;
+}
+
+.theme-taisho_roman .bento-label {
+    background: #330033;
+    color: #fff;
+    border: 1px solid #e6b422;
+    font-family: 'Kaisei Decol', serif;
+}
+
+/* Support */
+.theme-taisho_roman .support {
+    background: #3d2b25;
+}
+
+.theme-taisho_roman .support-card {
+    background: #2b1b17;
+    border: 1px solid #c71585;
+    box-shadow: 0 0 15px rgba(199, 21, 133, 0.2);
+}
+
+.theme-taisho_roman .icon-box {
+    background: #330033;
+    color: #e6b422;
+    border: 1px solid #e6b422;
+    border-radius: 5px;
+}
+
+/* Footer */
+.theme-taisho_roman .footer {
+    background: #1a0f0d;
+    border-top: 3px double #e6b422;
+    color: #886;
+}

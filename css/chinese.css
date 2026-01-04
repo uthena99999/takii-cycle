@@ -1,0 +1,231 @@
+/* Traditional Chinese / Festive Theme */
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700&display=swap');
+
+body.theme-chinese {
+    font-family: 'Noto Serif SC', serif !important;
+    background-color: #a40000;
+    /* China Red */
+    background-image:
+        radial-gradient(#d4af37 15%, transparent 16%),
+        radial-gradient(#d4af37 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    color: #fff;
+}
+
+/* Header */
+.theme-chinese .header {
+    background: #8b0000;
+    border-bottom: 4px solid #ffd700;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.theme-chinese .logo a {
+    font-family: 'Ma Shan Zheng', cursive;
+    color: #ffd700;
+    font-size: 2rem;
+}
+
+.theme-chinese .nav-list a {
+    color: #ffd700;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: 1px solid #ffd700;
+}
+
+.theme-chinese .nav-list a:hover {
+    background: #ffd700;
+    color: #8b0000;
+}
+
+/* Hero */
+.theme-chinese .hero-overlay {
+    background: linear-gradient(to right, rgba(164, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+}
+
+.theme-chinese .hero-title {
+    font-family: 'Ma Shan Zheng', cursive;
+    color: #ffd700;
+    text-shadow: 2px 2px 0 #000;
+    writing-mode: horizontal-tb;
+    padding-top: 100px;
+    /* Prevent header overlap */
+    display: inline-block;
+    margin-bottom: 30px;
+    /* Keep horizontal for English */
+}
+
+.theme-chinese .hero-subtitle {
+    background: #fff;
+    color: #8b0000;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    font-weight: bold;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.theme-chinese .hero {
+    height: auto !important;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+margin-bottom: 30px;
+}
+
+.theme-chinese .btn-main {
+    background: #ffd700;
+    color: #8b0000;
+    border-radius: 50px;
+    font-weight: 900;
+    border: 4px solid #8b0000;
+    box-shadow: 0 0 0 2px #ffd700;
+    margin-bottom: 5rem;
+    /* Ensure spacing from next section */
+    position: relative;
+    z-index: 10;
+}
+
+.theme-chinese .btn-main:hover {
+    background: #fff;
+    color: #a40000;
+}
+
+/* Bento Grid */
+.theme-chinese .section-title {
+    color: #ffd700;
+    font-family: 'Ma Shan Zheng', cursive;
+    background: #8b0000;
+    padding: 10px 40px;
+    border: 2px solid #ffd700;
+    border-radius: 50px;
+}
+
+.theme-chinese .bento-item {
+    background: #fffbf0;
+    /* Cream */
+    border: 4px solid #8b0000;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0 #ffd700;
+}
+
+/* Fix Readability for Box Content over Images */
+.theme-chinese .bento-content {
+    background: rgba(255, 251, 240, 0.9);
+    /* Opaque cream background */
+    border: 2px solid #8b0000;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    /* Adjust based on flex layout */
+}
+
+.theme-chinese .bento-item h3 {
+    color: #8b0000;
+    font-family: 'Ma Shan Zheng', cursive;
+}
+
+.theme-chinese .bento-item p {
+    color: #555;
+    font-family: 'Noto Serif SC', serif;
+}
+
+.theme-chinese .bento-label {
+    background: #8b0000;
+    color: #ffd700;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+}
+
+/* Support */
+.theme-chinese .support {
+    background: #8b0000;
+    background-image: repeating-linear-gradient(45deg, #7a0000 0, #7a0000 10px, #8b0000 10px, #8b0000 20px);
+}
+
+.theme-chinese .support-card {
+    background: #fff;
+    border: 2px solid #ffd700;
+    border-radius: 50% 50% 10px 10px;
+    /* Window shape-ish */
+}
+
+.theme-chinese .support-card h3 {
+    color: #8b0000;
+}
+
+.theme-chinese .support-card p {
+    color: #555;
+    font-weight: bold;
+}
+
+.theme-chinese .icon-box {
+    color: #ffd700;
+    background: #8b0000;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+}
+
+
+
+/* Fix Shop Product Cards */
+.theme-chinese .card-info {
+    background: #fffbf0;
+    /* Cream background like bento */
+    border: 2px solid #8b0000;
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    margin-top: -5px;
+    /* Connect to image */
+    position: relative;
+    z-index: 2;
+}
+
+.theme-chinese .image-container,
+.theme-chinese .card-image {
+    border: 2px solid #8b0000;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.theme-chinese .card-title {
+    color: #8b0000;
+}
+
+.theme-chinese .card-desc {
+    color: #555;
+    font-weight: bold;
+}
+
+.theme-chinese .card-price {
+    color: #a40000;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+/* Fix About Page Links */
+.theme-chinese .link-tags a {
+    background: #fffbf0;
+    color: #8b0000 !important;
+    border: 2px solid #8b0000 !important;
+    font-weight: bold;
+}
+
+.theme-chinese .link-tags a:hover {
+    background: #8b0000 !important;
+    color: #ffd700 !important;
+    border-color: #ffd700 !important;
+}
+
+/* Footer */
+.theme-chinese .footer {
+    background: #4a0000;
+    color: #ffd700;
+    border-top: 5px solid #ffd700;
+}

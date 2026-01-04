@@ -1,0 +1,276 @@
+/* Showa Retro / Nostalgic Theme */
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Zen+Old+Mincho:wght@400;700;900&display=swap');
+
+body.theme-showa {
+    font-family: 'Zen Old Mincho', serif !important;
+    background-color: #f7f3e8;
+    /* Aged paper */
+    background-image:
+        linear-gradient(#d3c6a6 1px, transparent 1px),
+        linear-gradient(90deg, #d3c6a6 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #4b3621;
+    /* Sepia/dark brown */
+}
+
+/* Header */
+.theme-showa .header {
+    background: #4a2315;
+    border-bottom: 5px solid #d99a2a;
+    box-shadow: 0 4px 0 #2a150c;
+}
+
+.theme-showa .logo a {
+    font-family: 'Zen Old Mincho', serif;
+    color: #fff;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+}
+
+.theme-showa .nav-list a {
+    color: #d99a2a;
+    font-family: 'Kosugi Maru', sans-serif;
+    border-right: 1px solid #777;
+    padding: 0 15px;
+}
+
+.theme-showa .nav-list a:last-child {
+    border-right: none;
+}
+
+.theme-showa .nav-list a:hover {
+    color: #fff;
+    background: #d95e2a;
+}
+
+/* Hero - Technicolor feel */
+.theme-showa .hero-bg img {
+    filter: sepia(0.4) contrast(1.2) saturate(1.5) blur(0.5px);
+}
+
+.theme-showa .hero-overlay {
+    background: radial-gradient(circle, transparent 40%, rgba(74, 35, 21, 0.6) 100%);
+    mix-blend-mode: multiply;
+}
+
+.theme-showa .hero-title {
+    font-family: 'Zen Old Mincho', serif;
+    color: #d95e2a;
+    /* Retro orange-red */
+    text-shadow: 3px 3px 0 #fff, 5px 5px 0 #4a2315;
+    transform: rotate(-2deg);
+}
+
+.theme-showa .hero-subtitle {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border: 3px double #000;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+}
+
+.theme-showa .btn-main {
+    background: #2a6ed9;
+    /* Retro blue */
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 #000;
+    font-family: 'Kosugi Maru', sans-serif;
+    position: relative;
+    /* Ensure z-index works if needed */
+    overflow: visible;
+    /* Allow displacement */
+}
+
+/* Disable global sliding white background for Showa theme */
+.theme-showa .btn-main::before {
+    display: none;
+}
+
+.theme-showa .btn-main:hover {
+    background: #d95e2a;
+    /* Retro orange */
+    color: #fff;
+    /* Keep white text */
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #000;
+}
+
+/* Bento Grid */
+.theme-showa .section-title {
+    color: #4a2315;
+    border-bottom: 3px dashed #4a2315;
+    display: inline-block;
+}
+
+.theme-showa .bento-item {
+    background: #fff;
+    border: 2px solid #4a2315;
+    border-radius: 2px;
+    box-shadow: 5px 5px 0 rgba(74, 35, 21, 0.2);
+}
+
+.theme-showa .bento-item::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 95%;
+    height: 95%;
+    border: 1px dotted #4a2315;
+    pointer-events: none;
+}
+
+.theme-showa .bento-item h3 {
+    color: #d95e2a;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.theme-showa .bento-label {
+    background: #2a6ed9;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #2a6ed9;
+}
+
+/* Support */
+.theme-showa .support {
+    background: #e8e4d9;
+}
+
+.theme-showa .support-card {
+    background: #fff;
+    border: 4px double #4a2315;
+    box-shadow: none;
+}
+
+.theme-showa .support-card h3 {
+    color: #4a2315;
+}
+
+.theme-showa .icon-box {
+    background: #d99a2a;
+    color: #fff;
+    border-radius: 0;
+    border: 2px solid #4a2315;
+}
+
+/* Footer */
+.theme-showa .footer {
+    background: #4a2315;
+    color: #d3c6a6;
+    border-top: 10px solid #d95e2a;
+}
+
+/* Fix Readability for Box Content over Images */
+.theme-showa .bento-content {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #4a2315;
+    box-shadow: 3px 3px 0 rgba(74, 35, 21, 0.2);
+}
+
+.theme-showa .bento-content h3 {
+    color: #d95e2a;
+    text-shadow: none;
+}
+
+.theme-showa .bento-content p {
+    color: #4a2315;
+    font-weight: bold;
+}
+
+/* Fix Shop Product Cards */
+.theme-showa .card-title {
+    color: #4a2315;
+}
+
+.theme-showa .card-desc {
+    color: #5d4037;
+}
+
+/* Fix About Page Timeline */
+.theme-showa .timeline-item h3 {
+    color: #d95e2a !important;
+}
+
+.theme-showa .timeline-item p {
+    color: #4a2315 !important;
+}
+
+background: #d99a2a;
+color: #fff;
+border: 2px solid #4a2315;
+}
+
+/* Fix Repair Page Cards */
+.theme-showa .glass-card {
+    background: #fff;
+    border: 2px solid #4a2315;
+    box-shadow: 5px 5px 0 rgba(74, 35, 21, 0.2);
+}
+
+.theme-showa .glass-card h3 {
+    color: #d95e2a;
+    text-shadow: none;
+}
+
+.theme-showa .glass-card p {
+    color: #4a2315;
+}
+
+.theme-showa .price-row {
+    border-bottom: 1px dashed #4a2315;
+    color: #4a2315;
+}
+
+/* Fix Delivery Page Text */
+.theme-showa .delivery-desc {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border: 1px solid #4a2315;
+    color: #4a2315;
+    font-weight: bold;
+}
+
+.theme-showa .price-table-wrapper h3 {
+    color: #4a2315 !important;
+}
+
+.theme-showa .price-table th {
+    color: #d95e2a;
+    border-bottom: 2px solid #4a2315 !important;
+}
+
+.theme-showa .price-table td {
+    color: #4a2315;
+    border-bottom: 1px dashed #4a2315 !important;
+}
+
+/* Override inline style for prices in delivery table */
+.theme-showa .price-table td[style*="color: var(--color-primary)"] {
+    color: #d95e2a !important;
+}
+
+/* Fix Keys Page Remarks (Gray text) */
+.theme-showa .price-table td[style*="color: #ccc"] {
+    color: #4a2315 !important;
+}
+
+/* Fix About Page Links */
+.theme-showa .link-tags a {
+    color: #4a2315 !important;
+    border: 1px solid #4a2315 !important;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.theme-showa .link-tags a:hover {
+    background: #d95e2a !important;
+    color: #fff !important;
+    border-color: #d95e2a !important;
+}

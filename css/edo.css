@@ -1,0 +1,383 @@
+/* Edo / Ukiyo-e Traditional Theme */
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Yuji+Syuku&display=swap');
+
+body.theme-edo {
+    font-family: 'Yuji Syuku', serif !important;
+    background-color: #f0ebd8;
+    /* Washi paper */
+    color: #0f2350;
+    /* Indigo */
+    background-image:
+        radial-gradient(circle at 100% 150%, #f0ebd8 24%, #2e4482 25%, #2e4482 28%, #f0ebd8 29%, #f0ebd8 36%, #2e4482 36%, #2e4482 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%, #f0ebd8 24%, #2e4482 25%, #2e4482 28%, #f0ebd8 29%, #f0ebd8 36%, #2e4482 36%, #2e4482 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, #f0ebd8 10%, #2e4482 11%, #2e4482 23%, #f0ebd8 24%, #f0ebd8 30%, #2e4482 31%, #2e4482 43%, #f0ebd8 44%, #f0ebd8 50%, #2e4482 51%, #2e4482 63%, #f0ebd8 64%, #f0ebd8 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, #f0ebd8 5%, #2e4482 6%, #2e4482 15%, #f0ebd8 16%, #f0ebd8 20%, #2e4482 21%, #2e4482 30%, #f0ebd8 31%, #f0ebd8 35%, #2e4482 36%, #2e4482 45%, #f0ebd8 46%, #f0ebd8 49%, transparent 50%, transparent),
+        radial-gradient(circle at 0 50%, #f0ebd8 5%, #2e4482 6%, #2e4482 15%, #f0ebd8 16%, #f0ebd8 20%, #2e4482 21%, #2e4482 30%, #f0ebd8 31%, #f0ebd8 35%, #2e4482 36%, #2e4482 45%, #f0ebd8 46%, #f0ebd8 49%, transparent 50%, transparent);
+    background-size: 50px 25px;
+    background-attachment: fixed;
+    /* Seigaiha Pattern simplified opacity to not be too overwhelming */
+    position: relative;
+}
+
+/* Overlay to calm down the pattern */
+body.theme-edo::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(240, 235, 216, 0.9);
+    z-index: -1;
+}
+
+/* Header */
+.theme-edo .header {
+    background: #fff;
+    border-bottom: 5px solid #2e4482;
+}
+
+.theme-edo .logo a {
+    font-family: 'Hina Mincho', serif;
+    color: #2e4482;
+    background: #fff;
+    padding: 5px 10px;
+    border: 2px solid #2e4482;
+}
+
+.theme-edo .nav-list a {
+    color: #2e4482;
+    font-family: 'Yuji Syuku', serif;
+    font-weight: bold;
+    border-left: 2px solid #2e4482;
+    padding-left: 10px;
+}
+
+.theme-edo .nav-list a:hover {
+    background: #2e4482;
+    color: #fff;
+}
+
+/* Hero */
+.theme-edo .hero-bg img {
+    filter: grayscale(0.5) contrast(1.2) brightness(1.1);
+}
+
+/* Fix Hero Height to prevent cutoff */
+.theme-edo .hero {
+    height: auto !important;
+    min-height: 150vh;
+    /* Keep hero tall */
+    align-items: flex-start !important;
+    /* Start from top so margin pushes down */
+    padding-bottom: 100px;
+}
+
+.theme-edo .hero-title {
+    font-family: 'Hina Mincho', serif;
+    color: #2e4482;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    background: #fff;
+    padding: 60px 40px;
+    border: 8px solid #2e4482;
+    /* Remove absolute positioning constraints */
+    height: auto;
+    max-height: none;
+    white-space: nowrap;
+    position: relative;
+    /* CRITICAL: Make it part of flow */
+    right: auto;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    /* Position via margins */
+    margin-top: 280px;
+    /* Clear the header */
+    margin-right: 15%;
+    /* Spacing from right */
+
+    box-shadow: 20px 20px 0 rgba(46, 68, 130, 0.2);
+    letter-spacing: 1.2rem;
+    font-size: 7rem;
+    z-index: 10;
+}
+
+/* Force BEYOND text color to match */
+.theme-edo .hero-title .outline-text {
+    color: #2e4482 !important;
+    -webkit-text-fill-color: #2e4482 !important;
+    /* Critical for overriding outline effect */
+    text-shadow: none !important;
+    -webkit-text-stroke: 0 !important;
+    opacity: 1 !important;
+}
+
+.theme-edo .hero-text-wrapper {
+    display: flex;
+    /* Adjust layout for vertical title */
+    justify-content: flex-end;
+}
+
+.theme-edo .hero-subtitle {
+    display: none;
+    /* Hide subtitle for cleaner Ukiyo-e look, or restyle */
+}
+
+/* Reset buttons */
+.theme-edo .btn-main {
+    background: #b22222;
+    /* Hiiro Red */
+    color: #fff;
+    font-family: 'Yuji Syuku', serif;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Disable global "slide" effect for this theme */
+.theme-edo .btn-main::before {
+    display: none;
+}
+
+.theme-edo .btn-main:hover {
+    background: #8b1a1a;
+    /* Darker red */
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Bento Grid */
+.theme-edo .section-title {
+    color: #2e4482;
+    font-family: 'Hina Mincho', serif;
+    border: 2px solid #2e4482;
+    padding: 10px 30px;
+    background: #fff;
+}
+
+.theme-edo .bento-item {
+    background: #fff;
+    border: 3px solid #0f2350;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Fix text legibility - remove global dark gradient */
+.theme-edo .bento-content {
+    background: rgba(255, 255, 255, 0.85);
+    border-top: 1px solid #2e4482;
+}
+
+.theme-edo .bento-item img {
+    filter: sepia(0.2);
+}
+
+.theme-edo .bento-item h3 {
+    color: #0f2350;
+    font-family: 'Hina Mincho', serif;
+    border-bottom: 1px solid #0f2350;
+    display: inline-block;
+}
+
+.theme-edo .bento-label {
+    background: #2e4482;
+    color: #fff;
+    border-radius: 5px;
+    writing-mode: vertical-lr;
+    /* Vertical label */
+    padding: 10px 5px;
+    font-family: 'Yuji Syuku', serif;
+    height: auto;
+    width: auto;
+}
+
+/* Support */
+.theme-edo .support {
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.theme-edo .support-card {
+    border: 2px solid #2e4482;
+    background: #f0ebd8;
+}
+
+.theme-edo .support-card h3 {
+    color: #2e4482;
+    text-shadow: none;
+}
+
+.theme-edo .icon-box {
+    color: #b22222;
+    border: 2px solid #b22222;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* Footer */
+.theme-edo .footer {
+    background: #2e4482;
+    color: #fff;
+}
+
+/* Fix Info/Hours Text Visibility in Footer/About Section */
+.theme-edo .info-hours h3,
+.theme-edo .hours-list li,
+.theme-edo .info-list dt,
+.theme-edo .info-list dd,
+.theme-edo .section-title.small {
+    color: #2e4482 !important;
+    text-shadow: none !important;
+}
+
+/* Shop Page Product Card Fixes */
+.theme-edo .product-card .card-title {
+    color: #2e4482 !important;
+    text-shadow: none !important;
+}
+
+.theme-edo .product-card .card-desc {
+    color: #0f2350 !important;
+    text-shadow: none !important;
+}
+
+.theme-edo .product-card .card-price {
+    color: #b22222 !important;
+    /* Hiiro Red for price */
+    font-weight: bold;
+    text-shadow: none !important;
+}
+
+/* Page Specific Fixes (Delivery, Keys, Other) */
+
+/* General Container - Make them paper-like */
+.theme-edo .glass-panel,
+.theme-edo .glass-card {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 2px solid #2e4482 !important;
+    box-shadow: 10px 10px 0 rgba(46, 68, 130, 0.1) !important;
+    backdrop-filter: none !important;
+}
+
+/* Text Visibility */
+.theme-edo .delivery-desc p,
+.theme-edo .glass-panel p,
+.theme-edo .glass-panel li,
+.theme-edo .glass-card p {
+    color: #0f2350 !important;
+    text-shadow: none !important;
+}
+
+/* Titles */
+.theme-edo .price-table-wrapper h3,
+.theme-edo .alert-box h3,
+.theme-edo .timeline-item h3 {
+    color: #2e4482 !important;
+    text-shadow: none !important;
+}
+
+/* Tables */
+.theme-edo .price-table th {
+    color: #2e4482 !important;
+    border-bottom-color: #2e4482 !important;
+    text-shadow: none !important;
+}
+
+.theme-edo .price-table td {
+    color: #0f2350 !important;
+    border-bottom-color: rgba(46, 68, 130, 0.3) !important;
+    text-shadow: none !important;
+}
+
+/* Pricing highlighting */
+.theme-edo .price-table td[style*="color: var(--color-primary)"] {
+    color: #b22222 !important;
+    /* Hiiro Red for prices */
+}
+
+/* Alert Box */
+.theme-edo .alert-box {
+    background: rgba(255, 240, 240, 0.95) !important;
+    border: 2px solid #b22222 !important;
+    box-shadow: none !important;
+}
+
+.theme-edo .alert-box h3 {
+    color: #b22222 !important;
+}
+
+.theme-edo .alert-box li {
+    color: #500000 !important;
+}
+
+/* Timeline specific */
+.theme-edo .timeline::before {
+    background: #2e4482 !important;
+}
+
+.theme-edo .year {
+    background-color: #2e4482 !important;
+    color: #fff !important;
+    border: 1px solid #fff;
+    text-shadow: none !important;
+}
+
+/* Links / Tags (About Page) */
+.theme-edo .link-tags a {
+    color: #2e4482 !important;
+    border-color: #2e4482 !important;
+    background: #fff;
+    text-shadow: none !important;
+}
+
+.theme-edo .link-tags a:hover {
+    background: #2e4482 !important;
+    color: #fff !important;
+}
+
+/* Shop Page Specific Fixes */
+.theme-edo .shop-header {
+    padding-top: 180px !important;
+    /* Fix header overlap */
+}
+
+.theme-edo .shop-header h1 {
+    color: #2e4482 !important;
+    text-shadow: none !important;
+    font-family: 'Hina Mincho', serif;
+}
+
+.theme-edo .shop-header p {
+    color: #0f2350 !important;
+    text-shadow: none !important;
+    font-weight: bold;
+}
+
+.theme-edo .filter-btn {
+    color: #2e4482 !important;
+    border-color: #2e4482 !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    font-family: 'Yuji Syuku', serif;
+    backdrop-filter: blur(5px);
+}
+
+.theme-edo .filter-btn:hover,
+.theme-edo .filter-btn.active {
+    background: #2e4482 !important;
+    color: #fff !important;
+    border-color: #2e4482 !important;
+}
+
+/* Sale button specific override */
+.theme-edo .filter-btn[data-category="sale"] {
+    color: #b22222 !important;
+    border-color: #b22222 !important;
+}
+
+.theme-edo .filter-btn[data-category="sale"]:hover,
+.theme-edo .filter-btn[data-category="sale"].active {
+    background: #b22222 !important;
+    color: #fff !important;
+}

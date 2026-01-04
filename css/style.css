@@ -185,12 +185,17 @@ h4 {
 /* Hover Effect */
 /* Hover Effect - Stable Fix */
 /* Hover Effect - Robust Slide */
-.nav-list a {
+/* Hover Effect - Scoped to Default/Urban Tech Theme AND Maharaja */
+body.theme-urban-tech .nav-list a,
+body.theme-default .nav-list a,
+body.theme-maharaja .nav-list a {
     color: transparent;
-    /* Keep layout space */
+    overflow: hidden;
 }
 
-.nav-list a::before {
+body.theme-urban-tech .nav-list a::before,
+body.theme-default .nav-list a::before,
+body.theme-maharaja .nav-list a::before {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -203,7 +208,9 @@ h4 {
     opacity: 1;
 }
 
-.nav-list a::after {
+body.theme-urban-tech .nav-list a::after,
+body.theme-default .nav-list a::after,
+body.theme-maharaja .nav-list a::after {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -213,23 +220,20 @@ h4 {
     color: var(--color-primary);
     transition: all 0.3s var(--easing);
     transform: translateY(100%);
-    /* Start below */
     opacity: 0;
 }
 
-.nav-list a:hover {
-    transform: none;
-}
-
-.nav-list a:hover::before {
+body.theme-urban-tech .nav-list a:hover::before,
+body.theme-default .nav-list a:hover::before,
+body.theme-maharaja .nav-list a:hover::before {
     transform: translateY(-100%);
-    /* Move up */
     opacity: 0;
 }
 
-.nav-list a:hover::after {
+body.theme-urban-tech .nav-list a:hover::after,
+body.theme-default .nav-list a:hover::after,
+body.theme-maharaja .nav-list a:hover::after {
     transform: translateY(0);
-    /* Move in */
     opacity: 1;
 }
 
@@ -1451,5 +1455,51 @@ overflow: hidden;
     .info-hours,
     .map-container {
         grid-column: auto;
+    }
+}
+
+/* Delivery Page Specifics */
+.delivery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.delivery-desc {
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.delivery-desc p {
+    margin-bottom: 1.5rem;
+}
+
+.delivery-note {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    border-left: 2px solid var(--color-primary);
+    padding-left: 1rem;
+}
+
+@media (max-width: 900px) {
+    .delivery-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .delivery-desc {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .delivery-note {
+        border-left: none;
+        border-top: 2px solid var(--color-primary);
+        padding-top: 1rem;
+        padding-left: 0;
+        display: inline-block;
     }
 }

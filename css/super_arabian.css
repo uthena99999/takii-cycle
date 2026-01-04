@@ -1,0 +1,174 @@
+/* Super Arabian / Luxurious Desert Theme */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Aref+Ruqaa:wght@400;700&display=swap');
+
+body.theme-super_arabian {
+    font-family: 'Aref Ruqaa', serif !important;
+    background-color: #0c0c0c;
+    background-image:
+        radial-gradient(#d4af37 1px, transparent 1px),
+        linear-gradient(45deg, #1a0f00 25%, #2a1f00 25%, #2a1f00 50%, #1a0f00 50%, #1a0f00 75%, #2a1f00 75%, #2a1f00 100%);
+    background-size: 20px 20px, 40px 40px;
+    color: #e5c15d;
+    /* Gold */
+    overflow-x: hidden;
+}
+
+/* Header - Palace arch style */
+.theme-super_arabian .header {
+    background: linear-gradient(to right, #000, #1a0f00, #000);
+    border-bottom: 4px double #d4af37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.theme-super_arabian .logo a {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #d4af37;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.theme-super_arabian .nav-list a {
+    color: #d4af37;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.theme-super_arabian .nav-list a::after {
+    content: "✦";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.3s;
+    color: #fff;
+}
+
+.theme-super_arabian .nav-list a:hover::after {
+    transform: translateX(-50%) scale(1);
+}
+
+/* Hero - Desert Sunset */
+.theme-super_arabian .hero-overlay {
+    background: linear-gradient(to top, #1a0f00 0%, rgba(212, 175, 55, 0.2) 50%, transparent 100%);
+}
+
+.theme-super_arabian .hero-title {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #fff;
+    text-shadow:
+        0 0 10px #d4af37,
+        0 0 20px #d4af37;
+}
+
+.theme-super_arabian .hero-subtitle {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.theme-super_arabian .btn-main {
+    background: #d4af37;
+    color: #000;
+    font-family: 'Cinzel Decorative', cursive;
+    border-radius: 0;
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    font-weight: bold;
+}
+
+.theme-super_arabian .btn-main:hover {
+    background: #f7d677;
+    transform: scale(1.1);
+}
+
+/* Services */
+.theme-super_arabian .section-title {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #d4af37;
+    text-align: center;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.theme-super_arabian .bento-item {
+    border: 2px solid #d4af37;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 0 0;
+    /* Islamic arch-ish hint */
+    position: relative;
+}
+
+.theme-super_arabian .bento-item:hover {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+    border-color: #fff;
+}
+
+.theme-super_arabian .bento-item::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px dashed #d4af37;
+    pointer-events: none;
+}
+
+.theme-super_arabian .bento-content {
+    z-index: 1;
+}
+
+.theme-super_arabian .bento-item h3 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #d4af37;
+}
+
+.theme-super_arabian .bento-item p {
+    color: #fff;
+}
+
+.theme-super_arabian .bento-label {
+    background: #d4af37;
+    color: #000;
+    border-radius: 50%;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+/* Support */
+.theme-super_arabian .support {
+    background: linear-gradient(to bottom, #1a0f00, #2c1a00);
+}
+
+.theme-super_arabian .support-card {
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px solid #d4af37;
+    color: #d4af37;
+}
+
+.theme-super_arabian .icon-box {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #d4af37;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Footer */
+.theme-super_arabian .footer {
+    background: #000;
+    border-top: 4px solid #d4af37;
+    color: #d4af37;
+}
+
+.theme-super_arabian .cursor-dot {
+    background-color: #d4af37;
+}
+
+.theme-super_arabian .cursor-outline {
+    border-color: #d4af37;
+}
