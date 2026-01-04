@@ -589,6 +589,15 @@ h4 {
     display: flex;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: center;
+    /* Vertically center if needed, or leave baseline */
+}
+
+.info-row dd {
+    flex: 1;
+    /* Allow value to fill remaining space */
+    padding-left: 1rem;
+    /* Add spacing between label and value */
 }
 
 /* Footer */
@@ -1375,6 +1384,7 @@ overflow: hidden;
         padding: 1.5rem;
     }
 }
+
 /* Map Container */
 .map-container {
     margin-top: 2rem;
@@ -1385,11 +1395,13 @@ overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
 .map-container iframe {
     width: 100%;
     height: 100%;
     border: 0;
-    filter: grayscale(100%) invert(92%) contrast(83%); /* Dark mode map style */
+    filter: grayscale(100%) invert(92%) contrast(83%);
+    /* Dark mode map style */
 }
 
 /* Hero Outline Text Style */
@@ -1401,19 +1413,23 @@ overflow: hidden;
 
 /* Adjust Hero Vertical Position */
 .hero-content {
-    margin-top: 8vh; /* Move down as requested */
+    margin-top: 8vh;
+    /* Move down as requested */
 }
 
 /* Map Layout Refinement */
 .info-wrapper {
     display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1.6fr 1fr;
+    /* Widen left column (Info) */
+    gap: 3rem;
     align-items: start;
 }
 
 .info-content {
     grid-column: 1;
+    width: 100% !important;
+    /* Override old 50% width */
 }
 
 .info-hours {
@@ -1421,7 +1437,8 @@ overflow: hidden;
 }
 
 .map-container {
-    grid-column: 1 / -1; /* Span full width */
+    grid-column: 1 / -1;
+    /* Span full width */
     margin-top: 1rem;
 }
 
@@ -1429,7 +1446,10 @@ overflow: hidden;
     .info-wrapper {
         grid-template-columns: 1fr;
     }
-    .info-content, .info-hours, .map-container {
+
+    .info-content,
+    .info-hours,
+    .map-container {
         grid-column: auto;
     }
 }
