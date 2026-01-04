@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const randomIndex = Math.floor(Math.random() * themes.length);
         savedTheme = themes[randomIndex].id;
         localStorage.setItem(themeKey, savedTheme);
-        console.log(`First visit! Randomly selected theme: ${savedTheme}`);
     }
 
     const body = document.body;
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.rel = 'stylesheet';
                 document.head.appendChild(link);
             }
-            link.href = `css/${theme}.css?v=${new Date().getTime()}`;
+            link.href = `css/${theme}.css`;
             // Preload font if needed based on theme could be added here
         }
 
