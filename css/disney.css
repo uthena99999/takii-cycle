@@ -68,18 +68,21 @@ body.theme-disney::before {
     text-shadow: 0 0 8px #ffd700;
 }
 
-/* Hero */
-filter: brightness(0.7) contrast(1.2) hue-rotate(-10deg);
+/* Hero Background Effect */
+.theme-disney .hero-bg img {
+    filter: brightness(0.7) contrast(1.2) hue-rotate(-10deg);
 }
 
 /* Fix Hero Overlap - CRITICAL OVERRIDES */
 .theme-disney .hero {
     height: auto !important;
     /* Override style.css 100vh */
-    min-height: 140vh;
+    min-height: 150vh;
     /* Ensure tall canvas */
-    padding-bottom: 250px;
+    padding-bottom: 350px;
     /* Ensure clearance */
+    margin-bottom: 50px;
+    /* Extra separation */
     display: flex;
     flex-direction: column;
     justify-content: center;
