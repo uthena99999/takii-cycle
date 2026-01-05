@@ -277,3 +277,106 @@ body.theme-ghibli {
     background: #8eba8e !important;
     color: #fff !important;
 }
+
+/* Support Section Override */
+.theme-ghibli .support-promo {
+    background: #eef7ee;
+    background-image: radial-gradient(#fff 20%, transparent 20%),
+        radial-gradient(#fff 20%, transparent 20%);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 0 #dcead0;
+}
+
+.theme-ghibli .bg-accent-1,
+.theme-ghibli .bg-accent-2 {
+    display: none;
+}
+
+.theme-ghibli .support-title {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #3d4d22;
+    text-shadow: 2px 2px 0 #fff;
+    letter-spacing: 0.05em;
+}
+
+.theme-ghibli .support-subtitle {
+    color: #556b2f;
+    background: #fff;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 0 #dcead0;
+}
+
+.theme-ghibli .support-desc {
+    color: #3d4d22;
+    font-weight: 500;
+}
+
+/* Table container styling to match delivery page */
+.theme-ghibli .support-table {
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.theme-ghibli .support-table thead tr {
+    background: transparent;
+}
+
+.theme-ghibli .support-table th {
+    color: #3d4d22;
+    border-bottom: 3px solid #8eba8e;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding: 1.2rem;
+}
+
+.theme-ghibli .support-table .th-support {
+    background: transparent;
+    color: #3d4d22;
+    border-bottom: 3px solid #ff7f50;
+    /* Highlight support column */
+}
+
+.theme-ghibli .support-table td {
+    color: #556b2f;
+    border-bottom: 1px solid #dcead0;
+    padding: 1.2rem;
+}
+
+.theme-ghibli .support-table .td-regular {
+    color: #556b2f;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.theme-ghibli .support-table .td-support {
+    background: rgba(255, 255, 230, 0.5);
+    /* Slight yellow tint */
+    color: #ff7f50;
+    font-weight: 800;
+}
+
+.theme-ghibli .support-table .td-support-sub {
+    color: #ff7f50;
+    opacity: 0.8;
+}
+
+.theme-ghibli .support-table .td-menu-item {
+    color: #2f4f4f;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.theme-ghibli .support-recycle-badge {
+    background: #fff;
+    border: 3px solid #8eba8e;
+    color: #556b2f;
+    border-radius: 50px;
+    box-shadow: 0 5px 0 #dcead0;
+    font-weight: 800;
+}
