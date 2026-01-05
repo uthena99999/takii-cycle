@@ -1757,17 +1757,7 @@ body.theme-maharaja .nav-list a:hover::after {
     text-decoration: underline;
 }
 
-/* Default Body Background (Edo) */
-body {
-    background-image:
-        radial-gradient(circle at 100% 150%, #f0ebd8 24%, #2e4482 25%, #2e4482 28%, #f0ebd8 29%, #f0ebd8 36%, #2e4482 36%, #2e4482 40%, transparent 40%, transparent),
-        radial-gradient(circle at 0 150%, #f0ebd8 24%, #2e4482 25%, #2e4482 28%, #f0ebd8 29%, #f0ebd8 36%, #2e4482 36%, #2e4482 40%, transparent 40%, transparent),
-        radial-gradient(circle at 50% 100%, #f0ebd8 10%, #2e4482 11%, #2e4482 23%, #f0ebd8 24%, #f0ebd8 30%, #2e4482 31%, #2e4482 43%, #f0ebd8 44%, #f0ebd8 50%, #2e4482 51%, #2e4482 63%, #f0ebd8 64%, #f0ebd8 71%, transparent 71%, transparent),
-        radial-gradient(circle at 100% 50%, #f0ebd8 5%, #2e4482 6%, #2e4482 15%, #f0ebd8 16%, #f0ebd8 20%, #2e4482 21%, #2e4482 30%, #f0ebd8 31%, #f0ebd8 35%, #2e4482 36%, #2e4482 45%, #f0ebd8 46%, #f0ebd8 49%, transparent 50%, transparent),
-        radial-gradient(circle at 0 50%, #f0ebd8 5%, #2e4482 6%, #2e4482 15%, #f0ebd8 16%, #f0ebd8 20%, #2e4482 21%, #2e4482 30%, #f0ebd8 31%, #f0ebd8 35%, #2e4482 36%, #2e4482 45%, #f0ebd8 46%, #f0ebd8 49%, transparent 50%, transparent);
-    background-size: 50px 25px;
-    background-attachment: fixed;
-}
+/* Default Body Background (Edo) - Moved to edo.css to prevent leakage */
 
 /* Shop Gallery */
 .gallery-grid {
