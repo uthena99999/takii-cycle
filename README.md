@@ -20,8 +20,10 @@ This project is the renewal of the Takii Cycle website, featuring a "Neo-Classic
 *   **Platform**: **GitHub Pages**
 *   **Live URL**: [https://uthena99999.github.io/takii-cycle/](https://uthena99999.github.io/takii-cycle/)
 *   **Process**:
-    1.  Push changes to `main`.
-    2.  Push changes to `gh-pages` branch to trigger deployment.
+    1.  Develop on `main`.
+    2.  Run the **Deployment Workflow** to deploy:
+        *   **For AI Agents**: Execute the instructions in `.agent/workflows/deploy.md` or use the command `Deploy to GitHub Pages`.
+        *   **Manual**: Merge `main` to `gh-pages` and push.
     3.  DO NOT use Netlify or Vercel unless explicitly requested.
 
 ## Directory Structure
