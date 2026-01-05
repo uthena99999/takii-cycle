@@ -450,3 +450,29 @@ body.theme-edo::before {
 .theme-edo .text-accent-default {
     color: #b22222 !important;
 }
+
+/* Campaign Overrides for Edo */
+.theme-edo .campaign-section {
+    background: #f0ebd8 !important;
+    border: none !important;
+}
+.theme-edo .campaign-panel {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 2px solid #2e4482 !important;
+    box-shadow: none !important;
+}
+.theme-edo .campaign-title {
+    color: #b22222 !important;
+    text-shadow: none !important;
+    font-family: 'Hina Mincho', serif;
+}
+.theme-edo .campaign-text {
+    color: #0f2350 !important;
+}
+.theme-edo .campaign-details {
+    background: #fff !important;
+    border: 1px solid #2e4482 !important;
+}
+.theme-edo .campaign-note, .theme-edo .campaign-note a {
+    color: #2e4482 !important;
+}

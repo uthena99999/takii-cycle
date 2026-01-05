@@ -294,3 +294,29 @@ body.theme-europe {
 .theme-europe .text-accent-default {
     color: #2c3e50 !important;
 }
+
+/* Campaign Overrides for Europe */
+.theme-europe .campaign-section {
+    background: #fff !important;
+    border: none !important;
+}
+.theme-europe .campaign-panel {
+    background: #f8f9fa !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+}
+.theme-europe .campaign-title {
+    color: #1a252f !important;
+    text-shadow: none !important;
+    font-family: 'Playfair Display', serif;
+}
+.theme-europe .campaign-text {
+    color: #2c3e50 !important;
+}
+.theme-europe .campaign-details {
+    background: #fff !important;
+    border: 1px solid #eee !important;
+}
+.theme-europe .campaign-note, .theme-europe .campaign-note a {
+    color: #555 !important;
+}

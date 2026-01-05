@@ -387,3 +387,28 @@ body.theme-ghibli {
 .theme-ghibli .text-accent-default {
     color: #ff7f50 !important;
 }
+
+/* Campaign Overrides for Ghibli */
+.theme-ghibli .campaign-section {
+    background: #eef7ee !important;
+    border: none !important;
+}
+.theme-ghibli .campaign-panel {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border: 2px solid #8eba8e !important;
+    box-shadow: 0 5px 15px rgba(107, 142, 35, 0.2) !important;
+}
+.theme-ghibli .campaign-title {
+    color: #3d4d22 !important;
+    text-shadow: 2px 2px 0 #fff !important;
+}
+.theme-ghibli .campaign-text {
+    color: #3d4d22 !important;
+}
+.theme-ghibli .campaign-details {
+    background: #f4f7f0 !important;
+    border: 1px solid #8eba8e !important;
+}
+.theme-ghibli .campaign-note, .theme-ghibli .campaign-note a {
+    color: #556b2f !important;
+}

@@ -341,3 +341,30 @@ border: 2px solid #4a2315;
 .theme-showa .text-accent-default {
     color: #d95e2a !important;
 }
+
+/* Campaign Overrides for Showa */
+.theme-showa .campaign-section {
+    background: #e8e4d9 !important;
+    border: none !important;
+}
+.theme-showa .campaign-panel {
+    background: #fff !important;
+    border: 3px double #4a2315 !important;
+    box-shadow: 5px 5px 0 rgba(74, 35, 21, 0.2) !important;
+}
+.theme-showa .campaign-title {
+    color: #d95e2a !important;
+    text-shadow: none !important;
+    font-family: 'Zen Old Mincho', serif;
+}
+.theme-showa .campaign-text {
+    color: #4a2315 !important;
+    font-weight: bold;
+}
+.theme-showa .campaign-details {
+    background: #f7f3e8 !important;
+    border: 1px solid #4a2315 !important;
+}
+.theme-showa .campaign-note, .theme-showa .campaign-note a {
+    color: #8c6a4e !important;
+}
