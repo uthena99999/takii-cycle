@@ -241,3 +241,40 @@ body.theme-near_future {
 .theme-near_future .campaign-note a {
     color: #f0f !important;
 }
+
+/* Shop Info Section Theme Override */
+.theme-near_future .info-section .glass-panel {
+    background: rgba(5, 5, 5, 0.95) !important;
+    border: 1px solid #0ff !important;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2) !important;
+    border-radius: 0 !important;
+}
+
+.theme-near_future .info-section h3 {
+    color: #fff !important;
+    text-shadow: 2px 0 #0ff, -2px 0 #f0f;
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+.theme-near_future .info-section th,
+.theme-near_future .info-section td,
+.theme-near_future .info-section p,
+.theme-near_future .info-section span,
+.theme-near_future .info-section div {
+    color: #0ff !important;
+    font-family: 'Rajdhani', sans-serif !important;
+}
+
+.theme-near_future .info-section a {
+    color: #f0f !important;
+}
+
+.theme-near_future .info-safety-row,
+.theme-near_future .info-service-row>div {
+    background: rgba(0, 255, 255, 0.05) !important;
+    border: 1px solid #f0f !important;
+}
+
+.theme-near_future .info-section .text-muted {
+    color: #008888 !important;
+}

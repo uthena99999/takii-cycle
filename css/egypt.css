@@ -190,3 +190,34 @@ body.theme-egypt {
 .theme-egypt .campaign-note a {
     color: #e6c200 !important;
 }
+
+/* Shop Info Section Theme Override */
+.theme-egypt .info-section .glass-panel {
+    background: #000 !important;
+    border: 3px double #e6c200 !important;
+}
+
+.theme-egypt .info-section h3 {
+    color: #e6c200 !important;
+    font-family: 'Cinzel', serif !important;
+    border-bottom: 1px solid #e6c200;
+    display: inline-block;
+}
+
+.theme-egypt .info-section th,
+.theme-egypt .info-section td,
+.theme-egypt .info-section p,
+.theme-egypt .info-section span,
+.theme-egypt .info-section div {
+    color: #c9a573 !important;
+}
+
+.theme-egypt .info-section a {
+    color: #e6c200 !important;
+}
+
+.theme-egypt .info-safety-row,
+.theme-egypt .info-service-row>div {
+    background: #111 !important;
+    border: 1px solid #e6c200 !important;
+}

@@ -260,3 +260,37 @@ body.theme-disney::before {
 .theme-disney .campaign-note a {
     color: #87cefa !important;
 }
+
+/* Shop Info Section Theme Override */
+.theme-disney .info-section .glass-panel {
+    background: rgba(15, 32, 39, 0.9) !important;
+    border: 1px solid #ffd700 !important;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2) !important;
+}
+
+.theme-disney .info-section h3 {
+    color: #ffd700 !important;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.theme-disney .info-section th,
+.theme-disney .info-section td,
+.theme-disney .info-section p,
+.theme-disney .info-section span,
+.theme-disney .info-section div {
+    color: #fff !important;
+}
+
+.theme-disney .info-section .text-muted {
+    color: #ccc !important;
+}
+
+.theme-disney .info-section a {
+    color: #87cefa !important;
+}
+
+.theme-disney .info-safety-row,
+.theme-disney .info-service-row>div {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 215, 0, 0.3) !important;
+}

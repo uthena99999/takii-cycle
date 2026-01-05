@@ -199,3 +199,34 @@ body.theme-taisho_roman::before {
 .theme-taisho_roman .campaign-note a {
     color: #e6b422 !important;
 }
+
+/* Shop Info Section Theme Override */
+.theme-taisho_roman .info-section .glass-panel {
+    background: #2b1b17 !important;
+    border: 2px solid #c71585 !important;
+    outline: 1px solid #e6b422 !important;
+    outline-offset: -5px !important;
+}
+
+.theme-taisho_roman .info-section h3 {
+    color: #e6b422 !important;
+    font-family: 'Kaisei Decol', serif !important;
+}
+
+.theme-taisho_roman .info-section th,
+.theme-taisho_roman .info-section td,
+.theme-taisho_roman .info-section p,
+.theme-taisho_roman .info-section span,
+.theme-taisho_roman .info-section div {
+    color: #fce4d6 !important;
+}
+
+.theme-taisho_roman .info-section a {
+    color: #c71585 !important;
+}
+
+.theme-taisho_roman .info-safety-row,
+.theme-taisho_roman .info-service-row>div {
+    background: #3d2b25 !important;
+    border: 1px solid #c71585 !important;
+}

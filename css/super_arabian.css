@@ -209,3 +209,35 @@ body.theme-super_arabian {
     color: #d4af37 !important;
     opacity: 0.8;
 }
+
+/* Shop Info Section Theme Override */
+.theme-super_arabian .info-section .glass-panel {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 2px solid #d4af37 !important;
+    border-radius: 0 !important;
+}
+
+.theme-super_arabian .info-section h3 {
+    color: #d4af37 !important;
+    font-family: 'Cinzel Decorative', cursive !important;
+}
+
+.theme-super_arabian .info-section th,
+.theme-super_arabian .info-section td,
+.theme-super_arabian .info-section p,
+.theme-super_arabian .info-section span,
+.theme-super_arabian .info-section div {
+    color: #e5c15d !important;
+    font-family: 'Aref Ruqaa', serif !important;
+}
+
+.theme-super_arabian .info-section a {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+.theme-super_arabian .info-safety-row,
+.theme-super_arabian .info-service-row>div {
+    background: rgba(212, 175, 55, 0.05) !important;
+    border: 1px solid #d4af37 !important;
+}

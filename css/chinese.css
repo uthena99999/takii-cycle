@@ -262,3 +262,38 @@ body.theme-chinese {
 .theme-chinese .campaign-note a {
     color: #ffd700 !important;
 }
+
+/* Shop Info Section Theme Override */
+.theme-chinese .info-section .glass-panel {
+    background: #a40000 !important;
+    border: 4px solid #ffd700 !important;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4) !important;
+}
+
+.theme-chinese .info-section h3 {
+    color: #ffd700 !important;
+    font-family: 'Ma Shan Zheng', cursive !important;
+}
+
+.theme-chinese .info-section th,
+.theme-chinese .info-section td,
+.theme-chinese .info-section p,
+.theme-chinese .info-section span,
+.theme-chinese .info-section div {
+    color: #fff !important;
+}
+
+.theme-chinese .info-section a {
+    color: #ffd700 !important;
+    text-decoration: underline;
+}
+
+.theme-chinese .info-safety-row,
+.theme-chinese .info-service-row>div {
+    background: #8b0000 !important;
+    border: 2px solid #ffd700 !important;
+}
+
+.theme-chinese .info-section .text-muted {
+    color: #ffcccc !important;
+}
