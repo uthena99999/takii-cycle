@@ -554,6 +554,7 @@ window.products = [
         name: 'Unicycle (一輪車)',
         category: 'other',
         price: 5000,
+        priceDisplay: '¥5,000 前後',
         image: 'assets/images/prod_unicycle.png',
         brand: 'Bridgestone etc.',
         description: '各サイズお取り寄せ可能。バランス感覚を養うのに最適。',
