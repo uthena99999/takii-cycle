@@ -466,7 +466,7 @@ body.theme-maharaja .nav-list a:hover::after {
 }
 
 .bento-item h3 {
-    font-size: clamp(1.2rem, 2.2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 1.8rem);
     /* Responsive sizing */
     margin-bottom: 0.5rem;
     line-height: 1.25;
