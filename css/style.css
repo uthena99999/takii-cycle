@@ -1,28 +1,31 @@
-/* CSS Variables */
-:root {
-    /* Urban Tech Palette */
-    --color-bg: #050505;
-    --color-bg-secondary: #0a0a0a;
-    --color-text: #e0e0e0;
-    --color-text-muted: #888;
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Yuji+Syuku&display=swap');
 
-    /* Neon Accents */
-    --color-primary: #00f0ff;
-    /* Cyber Cyan */
-    --color-secondary: #ccff00;
-    /* Acid lime */
-    --color-accent: #7000ff;
-    /* Electric Purple */
+/* CSS Variables (Edo Period Default) */
+:root {
+    /* Edo / Ukiyo-e Palette */
+    --color-bg: #f0ebd8;
+    --color-bg-secondary: #ffffff;
+    --color-text: #0f2350;
+    /* Indigo */
+    --color-text-muted: #555;
+
+    /* Accents */
+    --color-primary: #2e4482;
+    /* Indigo */
+    --color-secondary: #b22222;
+    /* Hiiro Red */
+    --color-accent: #8b0000;
 
     /* Typography */
-    --font-heading: 'Syne', sans-serif;
-    --font-body: 'Inter', sans-serif;
-    --font-jp: 'Noto Sans JP', sans-serif;
+    --font-heading: 'Hina Mincho', serif;
+    --font-body: 'Yuji Syuku', serif;
+    --font-jp: 'Yuji Syuku', serif;
 
-    /* Glassmorphism */
-    --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
-    --glass-blur: blur(12px);
+    /* Glassmorphism (Edo Paper Style) */
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: 2px solid #2e4482;
+    --glass-blur: none;
+
 
     /* Grid */
     --container-width: 1400px;
@@ -1752,4 +1755,15 @@ body.theme-maharaja .nav-list a:hover::after {
 .campaign-note a {
     color: #ff4500;
     text-decoration: underline;
+}
+/* Default Body Background (Edo) */
+body {
+    background-image:
+        radial-gradient(circle at 100% 150%, #f0ebd8 24%, #2e4482 25%, #2e4482 28%, #f0ebd8 29%, #f0ebd8 36%, #2e4482 36%, #2e4482 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%, #f0ebd8 24%, #2e4482 25%, #2e4482 28%, #f0ebd8 29%, #f0ebd8 36%, #2e4482 36%, #2e4482 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, #f0ebd8 10%, #2e4482 11%, #2e4482 23%, #f0ebd8 24%, #f0ebd8 30%, #2e4482 31%, #2e4482 43%, #f0ebd8 44%, #f0ebd8 50%, #2e4482 51%, #2e4482 63%, #f0ebd8 64%, #f0ebd8 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, #f0ebd8 5%, #2e4482 6%, #2e4482 15%, #f0ebd8 16%, #f0ebd8 20%, #2e4482 21%, #2e4482 30%, #f0ebd8 31%, #f0ebd8 35%, #2e4482 36%, #2e4482 45%, #f0ebd8 46%, #f0ebd8 49%, transparent 50%, transparent),
+        radial-gradient(circle at 0 50%, #f0ebd8 5%, #2e4482 6%, #2e4482 15%, #f0ebd8 16%, #f0ebd8 20%, #2e4482 21%, #2e4482 30%, #f0ebd8 31%, #f0ebd8 35%, #2e4482 36%, #2e4482 45%, #f0ebd8 46%, #f0ebd8 49%, transparent 50%, transparent);
+    background-size: 50px 25px;
+    background-attachment: fixed;
 }

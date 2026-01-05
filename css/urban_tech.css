@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* Urban Tech (Original Default) Theme */
+
+/* Import fonts used in Urban Tech if not already in style.css base (Syne is there) */
+
+body.theme-urban_tech {
+    /* Urban Tech Palette Re-application */
+    --color-bg: #050505;
+    --color-bg-secondary: #0a0a0a;
+    --color-text: #e0e0e0;
+    --color-text-muted: #888;
+
+    /* Neon Accents */
+    --color-primary: #00f0ff;
+    /* Cyber Cyan */
+    --color-secondary: #ccff00;
+    /* Acid lime */
+    --color-accent: #7000ff;
+    /* Electric Purple */
+
+    /* Typography */
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-jp: 'Noto Sans JP', sans-serif;
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+    --glass-blur: blur(12px);
+
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+}
+
+/* Specific overrides that might have been lost if style.css base changes */
+.theme-urban_tech .header {
+    background: rgba(5, 5, 5, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.theme-urban_tech .hero-bg img {
+    filter: grayscale(80%) contrast(1.2);
+}
+
+/* Restore Glitch Effect specific colors if needed */
+.theme-urban_tech .glitch:hover {
+    color: var(--color-primary);
+    text-shadow: 2px 2px var(--color-accent);
+}
+
+/* Campaign Section Original Look */
+.theme-urban_tech .campaign-section {
+    background: linear-gradient(45deg, #1a0b00, #2a1505);
+    border-top: 1px solid rgba(255, 100, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 100, 0, 0.2);
+}
+
+.theme-urban_tech .campaign-panel {
+    background: var(--glass-bg);
+    border: 1px solid #ff4500;
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.1);
+}
+
+.theme-urban_tech .campaign-title {
+    color: #ff4500;
+    text-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+}
+
+.theme-urban_tech .text-secondary-default {
+    color: var(--color-secondary);
+}

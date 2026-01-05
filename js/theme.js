@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeKey = 'takii_theme';
     // Define available themes
     const themes = [
-        { id: 'default', name: 'Default' },
+        { id: 'urban_tech', name: 'Urban Tech' },
         { id: 'maharaja', name: 'Maharaja' },
         { id: 'ghibli', name: 'Ghibli' },
         { id: 'disney', name: 'Disney' },
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // If no theme is saved (first visit), randomly select one to start
     if (!savedTheme) {
-        const randomIndex = Math.floor(Math.random() * themes.length);
-        savedTheme = themes[randomIndex].id;
+        // Default to Edo Period as requested
+        savedTheme = 'edo';
         localStorage.setItem(themeKey, savedTheme);
     }
 
