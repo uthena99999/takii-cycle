@@ -245,3 +245,44 @@ body.theme-europe {
     background: #1a252f;
     color: #fff;
 }
+/* Shop Page Purchase Benefits Support Section */
+.theme-europe .support-title,
+.theme-europe .support-subtitle,
+.theme-europe .support-desc {
+    color: #1a252f !important;
+    text-shadow: none !important;
+}
+
+.theme-europe .support-table th {
+    color: #1a252f !important;
+    border-bottom: 2px solid #1a252f !important;
+}
+
+.theme-europe .support-table td {
+    color: #555 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+.theme-europe .td-menu-item {
+    color: #1a252f !important;
+    font-weight: bold;
+}
+
+.theme-europe .td-menu-sub {
+    color: #777 !important;
+}
+
+.theme-europe .td-regular,
+.theme-europe .td-support {
+    color: #1a252f !important;
+}
+
+.theme-europe .td-support-sub {
+    color: #555 !important;
+}
+
+.theme-europe .support-recycle-badge {
+    background: #1a252f;
+    color: #fff;
+    border: none;
+}

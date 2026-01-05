@@ -274,3 +274,62 @@ border: 2px solid #4a2315;
     color: #fff !important;
     border-color: #d95e2a !important;
 }
+/* Shop Page Purchase Benefits Support Section */
+.theme-showa .support-title {
+    color: #4a2315 !important;
+    text-shadow: none !important;
+    border-bottom: 3px double #d95e2a;
+    display: inline-block;
+}
+
+.theme-showa .support-subtitle {
+    color: #d95e2a !important;
+    text-shadow: none !important;
+    font-weight: bold;
+}
+
+.theme-showa .support-desc {
+    color: #4a2315 !important;
+    font-weight: bold;
+}
+
+.theme-showa .support-table th {
+    color: #d95e2a !important;
+    border-bottom: 2px solid #4a2315 !important;
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.theme-showa .support-table td {
+    border-bottom: 1px dashed #4a2315 !important;
+}
+
+.theme-showa .td-menu-item {
+    color: #4a2315 !important;
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: bold;
+}
+
+.theme-showa .td-menu-sub {
+    color: #8c6a4e !important;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.theme-showa .td-regular {
+    color: #4a2315 !important;
+}
+
+.theme-showa .td-support {
+    color: #d95e2a !important; /* Retro orange highlight */
+    font-weight: bold;
+}
+
+.theme-showa .td-support-sub {
+    color: #4a2315 !important;
+}
+
+.theme-showa .support-recycle-badge {
+    background: #4a2315;
+    color: #d3c6a6;
+    border: 2px solid #d95e2a;
+    border-radius: 4px;
+}

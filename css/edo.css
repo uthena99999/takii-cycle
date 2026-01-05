@@ -381,3 +381,64 @@ body.theme-edo::before {
     background: #b22222 !important;
     color: #fff !important;
 }
+/* Shop Page Purchase Benefits Support Section */
+.theme-edo .support-title {
+    color: #2e4482 !important;
+    text-shadow: none !important;
+    font-family: 'Hina Mincho', serif;
+    border-bottom: 2px solid #b22222;
+    display: inline-block;
+}
+
+.theme-edo .support-subtitle {
+    color: #b22222 !important; /* Hiiro Red */
+    text-shadow: none !important;
+    font-family: 'Yuji Syuku', serif;
+}
+
+.theme-edo .support-desc {
+    color: #0f2350 !important;
+    font-weight: normal;
+}
+
+.theme-edo .support-table th {
+    color: #2e4482 !important;
+    border-bottom: 2px solid #2e4482 !important;
+    font-family: 'Hina Mincho', serif;
+}
+
+.theme-edo .support-table td {
+    border-bottom: 1px dotted #2e4482 !important;
+}
+
+.theme-edo .td-menu-item {
+    color: #0f2350 !important;
+    font-family: 'Hina Mincho', serif;
+    font-size: 1.1rem;
+}
+
+.theme-edo .td-menu-sub {
+    color: #2e4482 !important;
+    opacity: 0.8;
+}
+
+.theme-edo .td-regular {
+    color: #0f2350 !important;
+}
+
+.theme-edo .td-support {
+    color: #b22222 !important; /* Hiiro Red */
+    font-weight: bold;
+}
+
+.theme-edo .td-support-sub {
+    color: #b22222 !important;
+    opacity: 0.8;
+}
+
+.theme-edo .support-recycle-badge {
+    background: #fff;
+    color: #2e4482;
+    border: 2px solid #2e4482;
+    box-shadow: 4px 4px 0 rgba(46, 68, 130, 0.2);
+}
