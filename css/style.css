@@ -1756,6 +1756,7 @@ body.theme-maharaja .nav-list a:hover::after {
     color: #ff4500;
     text-decoration: underline;
 }
+
 /* Default Body Background (Edo) */
 body {
     background-image:
@@ -1766,4 +1767,109 @@ body {
         radial-gradient(circle at 0 50%, #f0ebd8 5%, #2e4482 6%, #2e4482 15%, #f0ebd8 16%, #f0ebd8 20%, #2e4482 21%, #2e4482 30%, #f0ebd8 31%, #f0ebd8 35%, #2e4482 36%, #2e4482 45%, #f0ebd8 46%, #f0ebd8 49%, transparent 50%, transparent);
     background-size: 50px 25px;
     background-attachment: fixed;
+}
+
+/* Shop Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.gallery-item {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s var(--easing);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.03);
+}
+
+.gallery-label {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-primary);
+}
+
+/* Bicycle Lineup */
+.bicycle-lineup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.bicycle-item {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: 0.3s;
+}
+
+.bicycle-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+}
+
+.bicycle-item h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.bicycle-item h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.bicycle-item p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.bicycle-note {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.x-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.x-link:hover {
+    background: #000;
+    border-color: var(--color-text);
 }
