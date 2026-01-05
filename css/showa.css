@@ -368,3 +368,8 @@ border: 2px solid #4a2315;
 .theme-showa .campaign-note, .theme-showa .campaign-note a {
     color: #8c6a4e !important;
 }
+
+/* Override Closed Text Visibility */
+.theme-showa .text-secondary-default {
+    color: #4a2315 !important; /* Dark Brown */
+}

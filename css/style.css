@@ -812,6 +812,10 @@ body.theme-maharaja .nav-list a:hover::after {
         color: var(--color-primary);
     }
 
+    .text-secondary-default {
+        color: var(--color-secondary);
+    }
+
     overflow: hidden;
 }
 
@@ -1705,6 +1709,7 @@ body.theme-maharaja .nav-list a:hover::after {
         display: none;
     }
 }
+
 /* Campaign Section Default (Urban Tech) */
 .campaign-section {
     background: linear-gradient(45deg, #1a0b00, #2a1505);

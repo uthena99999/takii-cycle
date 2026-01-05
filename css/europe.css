@@ -320,3 +320,8 @@ body.theme-europe {
 .theme-europe .campaign-note, .theme-europe .campaign-note a {
     color: #555 !important;
 }
+
+/* Override Closed Text Visibility */
+.theme-europe .text-secondary-default {
+    color: #1a252f !important; /* Dark Blue Grey */
+}

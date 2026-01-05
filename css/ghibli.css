@@ -412,3 +412,8 @@ body.theme-ghibli {
 .theme-ghibli .campaign-note, .theme-ghibli .campaign-note a {
     color: #556b2f !important;
 }
+
+/* Override Closed Text Visibility */
+.theme-ghibli .text-secondary-default {
+    color: #556b2f !important; /* Olive Green */
+}

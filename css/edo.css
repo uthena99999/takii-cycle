@@ -476,3 +476,8 @@ body.theme-edo::before {
 .theme-edo .campaign-note, .theme-edo .campaign-note a {
     color: #2e4482 !important;
 }
+
+/* Override Closed Text Visibility */
+.theme-edo .text-secondary-default {
+    color: #2e4482 !important; /* Indigo */
+}
