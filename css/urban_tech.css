@@ -30,6 +30,8 @@ body.theme-urban_tech {
     --glass-blur: blur(12px);
 
     background-color: var(--color-bg);
+    background-image: none !important;
+    background-attachment: scroll;
     color: var(--color-text);
     font-family: var(--font-body);
 }

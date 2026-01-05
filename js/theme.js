@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeKey = 'takii_theme';
     // Define available themes
     const themes = [
+        { id: 'edo', name: 'Edo Period' },
         { id: 'urban_tech', name: 'Urban Tech' },
         { id: 'maharaja', name: 'Maharaja' },
         { id: 'ghibli', name: 'Ghibli' },
@@ -13,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'chinese', name: 'Chinese' },
         { id: 'showa', name: 'Showa' },
         { id: 'taisho_roman', name: 'Taisho Roman' },
-        { id: 'edo', name: 'Edo Period' },
         { id: 'near_future', name: 'Near Future' }
     ];
 
