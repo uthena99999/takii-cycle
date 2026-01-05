@@ -547,5 +547,26 @@ window.products = [
         brand: 'Miyata',
         description: '【中古】28インチの大型モデル。通勤・通学に。',
         specs: { size: '28 inch', gears: '5 Speed', condition: 'Used' }
+    },
+    // --- Other Items ---
+    {
+        id: 'other-unicycle',
+        name: 'Unicycle (一輪車)',
+        category: 'other',
+        price: 5000,
+        image: 'assets/images/prod_unicycle.png',
+        brand: 'Bridgestone etc.',
+        description: '各サイズお取り寄せ可能。バランス感覚を養うのに最適。',
+        specs: { size: 'Various', gears: 'Single' }
+    },
+    {
+        id: 'other-woody',
+        name: 'Woody Trainee Bike',
+        category: 'other',
+        price: 16500,
+        image: 'assets/images/prod_woody_bike.png',
+        brand: 'Renault',
+        description: 'はじめての乗り物に。木のぬくもりを感じるトレーニングバイク。',
+        specs: { size: '12 inch', material: 'Wood' }
     }
 ];
