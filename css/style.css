@@ -1510,3 +1510,180 @@ body.theme-maharaja .nav-list a:hover::after {
     z-index: 1;
     /* Ensure content is above background but below header (10000) */
 }
+
+/* Shop Support Section (Purchase Benefits) - Matching Delivery Page */
+.support-promo {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 30px;
+    padding: 4rem;
+    margin-top: 5rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.support-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.support-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.support-subtitle {
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.support-desc {
+    color: var(--color-text-muted);
+    line-height: 1.8;
+}
+
+.support-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.support-table th {
+    text-align: left;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text-muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+}
+
+.support-table th.th-regular,
+.support-table th.th-support {
+    text-align: center;
+}
+
+.support-table th.th-support {
+    color: var(--color-primary);
+}
+
+.support-table td {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+}
+
+.support-table .td-menu-item {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.support-table .td-menu-sub {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-top: 0.2rem;
+}
+
+.support-table .td-regular {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-family: var(--font-body);
+}
+
+.support-table .td-support {
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(0, 240, 255, 0.03);
+    border-bottom: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.support-table .td-support-sub {
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 0.3rem;
+    color: var(--color-primary);
+}
+
+.support-footer {
+    margin-top: 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.support-recycle-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2.5rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50px;
+    background: rgba(0, 240, 255, 0.05);
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.support-recycle-badge:hover {
+    background: rgba(0, 240, 255, 0.15);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+}
+
+/* Background Accents */
+.bg-accent-1,
+.bg-accent-2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bg-accent-1 {
+    top: -150px;
+    right: -100px;
+    background: var(--color-primary);
+}
+
+.bg-accent-2 {
+    bottom: -150px;
+    left: -100px;
+    background: var(--color-accent);
+}
+
+/* Responsive Support Table */
+@media (max-width: 768px) {
+    .support-promo {
+        padding: 2rem;
+    }
+
+    .support-table th,
+    .support-table td {
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .support-table .td-menu-sub {
+        display: none;
+    }
+}
