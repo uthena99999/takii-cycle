@@ -796,8 +796,22 @@ body.theme-maharaja .nav-list a:hover::after {
 .cart-item-img {
     width: 80px;
     height: 80px;
-    background: #222;
-    border-radius: 8px;
+
+    /* Repair Page Fix */
+    .repair-main {
+        padding-top: 180px;
+        /* Clear fixed header */
+    }
+
+    /* Visibility Utilities for Themes */
+    .text-white-default {
+        color: #fff;
+    }
+
+    .text-accent-default {
+        color: var(--color-primary);
+    }
+
     overflow: hidden;
 }
 

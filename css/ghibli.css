@@ -380,3 +380,10 @@ body.theme-ghibli {
     box-shadow: 0 5px 0 #dcead0;
     font-weight: 800;
 }
+/* Visibility Override for Air Pump & New Sections */
+.theme-ghibli .text-white-default {
+    color: #3d4d22 !important;
+}
+.theme-ghibli .text-accent-default {
+    color: #ff7f50 !important;
+}

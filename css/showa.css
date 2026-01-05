@@ -333,3 +333,11 @@ border: 2px solid #4a2315;
     border: 2px solid #d95e2a;
     border-radius: 4px;
 }
+
+/* Visibility Override for Air Pump & New Sections */
+.theme-showa .text-white-default {
+    color: #4a2315 !important;
+}
+.theme-showa .text-accent-default {
+    color: #d95e2a !important;
+}

@@ -442,3 +442,11 @@ body.theme-edo::before {
     border: 2px solid #2e4482;
     box-shadow: 4px 4px 0 rgba(46, 68, 130, 0.2);
 }
+
+/* Visibility Override for Air Pump & New Sections */
+.theme-edo .text-white-default {
+    color: #2e4482 !important;
+}
+.theme-edo .text-accent-default {
+    color: #b22222 !important;
+}

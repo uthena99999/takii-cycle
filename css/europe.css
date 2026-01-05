@@ -286,3 +286,11 @@ body.theme-europe {
     color: #fff;
     border: none;
 }
+
+/* Visibility Override for Air Pump & New Sections */
+.theme-europe .text-white-default {
+    color: #1a252f !important;
+}
+.theme-europe .text-accent-default {
+    color: #2c3e50 !important;
+}
