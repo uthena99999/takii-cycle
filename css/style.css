@@ -189,16 +189,14 @@ h4 {
 /* Hover Effect - Stable Fix */
 /* Hover Effect - Robust Slide */
 /* Hover Effect - Scoped to Default/Urban Tech Theme AND Maharaja */
-body.theme-urban-tech .nav-list a,
-body.theme-default .nav-list a,
-body.theme-maharaja .nav-list a {
+body.theme-urban_tech .nav-list a,
+body.theme-default .nav-list a {
     color: transparent;
     overflow: hidden;
 }
 
-body.theme-urban-tech .nav-list a::before,
-body.theme-default .nav-list a::before,
-body.theme-maharaja .nav-list a::before {
+body.theme-urban_tech .nav-list a::before,
+body.theme-default .nav-list a::before {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -211,9 +209,8 @@ body.theme-maharaja .nav-list a::before {
     opacity: 1;
 }
 
-body.theme-urban-tech .nav-list a::after,
-body.theme-default .nav-list a::after,
-body.theme-maharaja .nav-list a::after {
+body.theme-urban_tech .nav-list a::after,
+body.theme-default .nav-list a::after {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -226,16 +223,14 @@ body.theme-maharaja .nav-list a::after {
     opacity: 0;
 }
 
-body.theme-urban-tech .nav-list a:hover::before,
-body.theme-default .nav-list a:hover::before,
-body.theme-maharaja .nav-list a:hover::before {
+body.theme-urban_tech .nav-list a:hover::before,
+body.theme-default .nav-list a:hover::before {
     transform: translateY(-100%);
     opacity: 0;
 }
 
-body.theme-urban-tech .nav-list a:hover::after,
-body.theme-default .nav-list a:hover::after,
-body.theme-maharaja .nav-list a:hover::after {
+body.theme-urban_tech .nav-list a:hover::after,
+body.theme-default .nav-list a:hover::after {
     transform: translateY(0);
     opacity: 1;
 }

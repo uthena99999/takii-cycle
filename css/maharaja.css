@@ -110,15 +110,44 @@ body.theme-maharaja {
     border: 1px solid var(--color-primary);
 }
 
+/* Shop Filter Buttons */
+.theme-maharaja .filter-btn {
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 0;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.theme-maharaja .filter-btn:hover,
+.theme-maharaja .filter-btn.active {
+    background: var(--color-primary);
+    color: #000 !important;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
 /* Navigation Fixes */
-.theme-maharaja .nav-list a::before {
+/* Navigation Fixes */
+.theme-maharaja .nav-list a {
+    color: var(--color-text);
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    /* Reserve space to prevent shift */
+}
+
+.theme-maharaja .nav-list a::before,
+.theme-maharaja .nav-list a::after {
     content: none !important;
 }
 
 .theme-maharaja .nav-list a:hover {
     background: transparent !important;
-    color: var(--color-primary) !important;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+    color: #ffd700 !important;
+    /* Bright Gold */
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.4);
+    border-bottom-color: #ffd700;
 }
 
 
