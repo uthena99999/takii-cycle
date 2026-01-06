@@ -381,6 +381,7 @@ body.theme-edo::before {
     background: #b22222 !important;
     color: #fff !important;
 }
+
 /* Shop Page Purchase Benefits Support Section */
 .theme-edo .support-title {
     color: #2e4482 !important;
@@ -391,7 +392,8 @@ body.theme-edo::before {
 }
 
 .theme-edo .support-subtitle {
-    color: #b22222 !important; /* Hiiro Red */
+    color: #b22222 !important;
+    /* Hiiro Red */
     text-shadow: none !important;
     font-family: 'Yuji Syuku', serif;
 }
@@ -427,7 +429,8 @@ body.theme-edo::before {
 }
 
 .theme-edo .td-support {
-    color: #b22222 !important; /* Hiiro Red */
+    color: #b22222 !important;
+    /* Hiiro Red */
     font-weight: bold;
 }
 
@@ -447,6 +450,7 @@ body.theme-edo::before {
 .theme-edo .text-white-default {
     color: #2e4482 !important;
 }
+
 .theme-edo .text-accent-default {
     color: #b22222 !important;
 }
@@ -456,28 +460,68 @@ body.theme-edo::before {
     background: #f0ebd8 !important;
     border: none !important;
 }
+
 .theme-edo .campaign-panel {
     background: rgba(255, 255, 255, 0.9) !important;
     border: 2px solid #2e4482 !important;
     box-shadow: none !important;
 }
+
 .theme-edo .campaign-title {
     color: #b22222 !important;
     text-shadow: none !important;
     font-family: 'Hina Mincho', serif;
 }
+
 .theme-edo .campaign-text {
     color: #0f2350 !important;
 }
+
 .theme-edo .campaign-details {
     background: #fff !important;
     border: 1px solid #2e4482 !important;
 }
-.theme-edo .campaign-note, .theme-edo .campaign-note a {
+
+.theme-edo .campaign-note,
+.theme-edo .campaign-note a {
     color: #2e4482 !important;
 }
 
 /* Override Closed Text Visibility */
 .theme-edo .text-secondary-default {
-    color: #2e4482 !important; /* Indigo */
+    color: #2e4482 !important;
+    /* Indigo */
+}
+
+/* Hamburger Menu Visibility Fix */
+.theme-edo .hamburger span {
+    background: #2e4482;
+    /* Indigo */
+}
+
+/* Mobile Menu Light Glass Fix */
+@media (max-width: 768px) {
+    .theme-edo .nav {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .theme-edo .nav-list a {
+        color: #0f2350;
+        /* Indigo Text */
+        font-family: 'Hina Mincho', serif;
+        font-size: 1.5rem;
+        border-left: none;
+        border-bottom: 2px solid #2e4482;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+        overflow: visible;
+    }
+
+    .theme-edo .nav-list a:hover {
+        background: #2e4482;
+        color: #fff;
+    }
 }

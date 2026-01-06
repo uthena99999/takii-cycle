@@ -417,3 +417,30 @@ body.theme-ghibli {
 .theme-ghibli .text-secondary-default {
     color: #556b2f !important; /* Olive Green */
 }
+
+/* Hamburger Menu Visibility Fix */
+.theme-ghibli .hamburger span {
+    background: #556b2f; /* Olive Green */
+}
+
+/* Mobile Menu Light Glass Fix */
+@media (max-width: 768px) {
+    .theme-ghibli .nav {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .theme-ghibli .nav-list a {
+        background: none;
+        color: #3d4d22;
+        font-size: 1.5rem;
+        border-bottom: 2px solid #8eba8e;
+        padding: 5px 20px;
+    }
+
+    .theme-ghibli .nav-list a:hover {
+        background: #eef7ee;
+        color: #ff7f50;
+    }
+}
