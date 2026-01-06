@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP | TAKII CYCLE</title>
+    <title>自転車ラインナップ (City, Sport, E-Bike) | TAKII CYCLE 静岡</title>
+    <meta name="description" content="タキイ輪店の取り扱い自転車一覧。ブリヂストン、パナソニック、ヤマハ、ミヤタなど。電動アシスト自転車、通学用自転車、スポーツバイク、中古自転車も。">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uthena99999.github.io/takii-cycle/shop.html">
+    <meta property="og:title" content="自転車ラインナップ (City, Sport, E-Bike) | TAKII CYCLE 静岡">
+    <meta property="og:description" content="最新の電動自転車から、通学・通勤に便利なシティサイクル、スポーツバイクまで幅広く取り扱っております。">
+    <meta property="og:image" content="https://uthena99999.github.io/takii-cycle/assets/images/service_sales.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -177,113 +185,7 @@
     <!-- Scripts (Loaded sequentially/synchronously for file:// compatibility) -->
     <script src="js/products.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Check if scripts loaded
-            if (!window.products) {
-                console.error('Core scripts failed to load');
-                return;
-            }
-
-            // DOM Elements
-            const grid = document.getElementById('productGrid');
-            const filters = document.querySelectorAll('.filter-btn');
-
-            // Render Products
-            function renderProducts(category = 'all') {
-                grid.innerHTML = '';
-
-                const filtered = category === 'all'
-                    ? window.products
-                    : window.products.filter(p => p.category === category);
-
-                filtered.forEach((product, index) => {
-                    const card = document.createElement('div');
-                    card.className = 'product-card fade-in-up';
-                    card.style.animationDelay = `${index * 0.1}s`; // Staggered animation
-
-                    card.innerHTML = `
-                        <div class="card-image">
-                            <img src="${product.image}" alt="${product.name}">
-                            <div class="card-overlay">
-                                
-                            </div>
-                            ${product.category === 'sale' ? '<div style="position:absolute;top:10px;right:10px;background:#ff4444;color:#fff;padding:4px 8px;border-radius:4px;font-weight:bold;font-size:0.8rem;">SALE</div>' : ''}
-                        </div>
-                        <div class="card-info">
-                            <span class="card-brand">${product.brand}</span>
-                            <h3 class="card-title">${product.name}</h3>
-                            <p class="card-desc">${product.description}</p>
-                            
-                            <!-- Specs Display -->
-                            ${product.specs ? `
-                            <div class="card-specs" style="margin: 0.5rem 0; font-size: 0.9rem; color: var(--color-text-muted);">
-                                ${product.specs.size ? `<span style="display:inline-block; margin-right:8px;"><i class="fas fa-ruler-horizontal"></i> ${product.specs.size}</span>` : ''}
-                                ${product.specs.gears ? `<span style="display:inline-block;"><i class="fas fa-cog"></i> ${product.specs.gears}</span>` : ''}
-                            </div>
-                            ` : ''}
-
-                            <div class="card-meta">
-                                <div>
-                                    ${product.originalPrice ? `<span style="text-decoration:line-through;color:#666;font-size:0.9rem;">¥${product.originalPrice.toLocaleString()}</span>` : ''}
-                                    <span class="card-price" style="${product.category === 'sale' ? 'color:#ff4444' : ''}">
-                                        ${product.priceDisplay ? product.priceDisplay : '¥' + product.price.toLocaleString()}
-                                    </span>
-                                </div>
-                                ${product.category === 'ebike' ? '<span class="badge">Electric</span>' : ''}
-                                ${product.category === 'secondhand' ? '<span class="badge">Used</span>' : ''}
-                            </div>
-                        </div>
-                    `;
-
-
-                    grid.appendChild(card);
-                });
-
-                // Re-trigger animations
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) entry.target.classList.add('visible');
-                    });
-                });
-                document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
-            }
-
-            // Filter Event
-            filters.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    filters.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    renderProducts(btn.dataset.category);
-                });
-            });
-
-            // Initial Render
-            renderProducts();
-
-            // Mobile Menu & Cursor (Simplified version of main.js)
-            const cursorDot = document.querySelector('.cursor-dot');
-            const cursorOutline = document.querySelector('.cursor-outline');
-            if (cursorDot && cursorOutline) {
-                window.addEventListener('mousemove', (e) => {
-                    cursorDot.style.left = `${e.clientX}px`;
-                    cursorDot.style.top = `${e.clientY}px`;
-                    cursorOutline.animate({
-                        left: `${e.clientX}px`,
-                        top: `${e.clientY}px`
-                    }, { duration: 500, fill: "forwards" });
-                });
-            }
-
-            const hamburger = document.querySelector('.hamburger');
-            const nav = document.querySelector('.nav');
-            if (hamburger) {
-                hamburger.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                });
-            }
-        });
-    </script>
+    <script src="js/shop.js"></script>
     <script src="js/theme.js"></script>
 </body>
 
