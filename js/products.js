@@ -78,7 +78,7 @@ window.products = [
         image: 'assets/images/products/city_01.png',
         brand: 'Bridgestone',
         description: 'クラス最軽量の軽快車。軽くてまたぎやすい。',
-        specs: { size: '26/24 inch', gears: '3 Speed' }
+        specs: { size: '26 inch', gears: '3 Speed' }
     },
     {
         id: 'city-alumiu-single',
@@ -160,7 +160,7 @@ window.products = [
         image: 'assets/images/products/commuter_01.png',
         brand: 'Bridgestone',
         description: 'ベストセラー通学自転車。ベルトドライブでメンテナンスフリー。',
-        specs: { size: '27/26 inch', gears: '5 Speed' }
+        specs: { size: '27 inch', gears: '5 Speed' }
     },
     {
         id: 'commuter-cajuna-sweet',
@@ -170,7 +170,7 @@ window.products = [
         image: 'assets/images/products/commuter_02.png',
         brand: 'Bridgestone',
         description: '可愛らしいデザインとカラーリング。ベルトドライブモデル。',
-        specs: { size: '27/26 inch', gears: '3 Speed' }
+        specs: { size: '27 inch', gears: '3 Speed' }
     },
     {
         id: 'commuter-cajuna-basic',
@@ -180,7 +180,7 @@ window.products = [
         image: 'assets/images/products/commuter_03.png',
         brand: 'Bridgestone',
         description: '落ち着いたカラーの上品なデザイン。ベルトドライブモデル。',
-        specs: { size: '27/26 inch', gears: '3 Speed' }
+        specs: { size: '27 inch', gears: '3 Speed' }
     },
     {
         id: 'commuter-stepcruz',
@@ -200,7 +200,7 @@ window.products = [
         image: 'assets/images/products/new_05.png',
         brand: 'Miyata',
         description: '丈夫で長持ち、安心の通学自転車。ベルトドライブ。',
-        specs: { size: '27/26 inch', gears: '3 Speed' }
+        specs: { size: '27 inch', gears: '3 Speed' }
     },
     {
         id: 'commuter-longteen-dx',
@@ -232,7 +232,7 @@ window.products = [
         image: 'assets/images/products/electric_02.png',
         brand: 'Bridgestone',
         description: '乗り降りしやすいフレーム形状。お手頃価格の電動自転車。',
-        specs: { size: '26/24 inch', battery: '6.2Ah', gears: '3 Speed' }
+        specs: { size: '24 inch', battery: '6.2Ah', gears: '3 Speed' }
     },
     {
         id: 'electric-pas-with',
@@ -426,7 +426,7 @@ window.products = [
         image: 'assets/images/products/new_11.png',
         brand: 'Bridgestone',
         description: '荷物がたっぷり積める実用車。専用BOX付き。',
-        specs: { size: '20/18 inch', gears: '3 Speed' }
+        specs: { size: 'Front 20 / Rear 18 inch', gears: '3 Speed' }
     },
 
     // --- Kids Bikes ---
@@ -513,7 +513,7 @@ window.products = [
         image: 'assets/images/products/sale_02.png',
         brand: 'Bridgestone',
         description: '【32%OFF】3人乗り対応電動アシスト自転車。',
-        specs: { size: '22/26 inch', battery: '8.7Ah', gears: '3 Speed' },
+        specs: { size: 'Front 22 / Rear 26 inch', battery: '8.7Ah', gears: '3 Speed' },
         isSale: true
     },
 

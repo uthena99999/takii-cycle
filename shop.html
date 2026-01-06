@@ -214,6 +214,15 @@
                             <span class="card-brand">${product.brand}</span>
                             <h3 class="card-title">${product.name}</h3>
                             <p class="card-desc">${product.description}</p>
+                            
+                            <!-- Specs Display -->
+                            ${product.specs ? `
+                            <div class="card-specs" style="margin: 0.5rem 0; font-size: 0.9rem; color: var(--color-text-muted);">
+                                ${product.specs.size ? `<span style="display:inline-block; margin-right:8px;"><i class="fas fa-ruler-horizontal"></i> ${product.specs.size}</span>` : ''}
+                                ${product.specs.gears ? `<span style="display:inline-block;"><i class="fas fa-cog"></i> ${product.specs.gears}</span>` : ''}
+                            </div>
+                            ` : ''}
+
                             <div class="card-meta">
                                 <div>
                                     ${product.originalPrice ? `<span style="text-decoration:line-through;color:#666;font-size:0.9rem;">¥${product.originalPrice.toLocaleString()}</span>` : ''}

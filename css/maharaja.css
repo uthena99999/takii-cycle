@@ -179,6 +179,11 @@ body.theme-maharaja {
     border: 1px solid #d4af37 !important;
 }
 
+.theme-maharaja select option {
+    background-color: #000;
+    color: #ffd700;
+}
+
 /* Hero Text */
 .theme-maharaja .hero-subtitle {
     background: rgba(0, 0, 0, 0.8) !important;
