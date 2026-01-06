@@ -102,10 +102,25 @@ body.theme-disney::before {
     margin-bottom: 30px;
 }
 
+margin-bottom: 30px;
+}
+
 .theme-disney .hero-title .outline-text {
     -webkit-text-stroke: 1px #87cefa;
-    color: transparent;
+    color: transparent !important;
+    /* Force transparent override */
     text-shadow: none;
+}
+
+.theme-disney .hero-title .glitch {
+    color: #fff !important;
+    /* Base White */
+}
+
+.theme-disney .hero-title .glitch:hover {
+    color: #ffd700 !important;
+    /* Gold Hover */
+    text-shadow: 0 0 10px #ffd700;
 }
 
 .theme-disney .hero-subtitle {

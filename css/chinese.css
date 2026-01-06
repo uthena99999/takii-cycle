@@ -57,7 +57,23 @@ body.theme-chinese {
     /* Prevent header overlap */
     display: inline-block;
     margin-bottom: 30px;
+    margin-bottom: 30px;
     /* Keep horizontal for English */
+}
+
+.theme-chinese .hero-title .outline-text {
+    color: transparent !important;
+    -webkit-text-stroke: 2px #ffd700;
+}
+
+.theme-chinese .hero-title .glitch {
+    color: #ffd700 !important;
+}
+
+.theme-chinese .hero-title .glitch:hover {
+    color: #8b0000 !important;
+    text-shadow: 2px 2px 0 #ffd700;
+    -webkit-text-stroke: 1px #ffd700;
 }
 
 .theme-chinese .hero-subtitle {

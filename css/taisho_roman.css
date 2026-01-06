@@ -85,6 +85,20 @@ body.theme-taisho_roman::before {
     letter-spacing: 0.1em;
 }
 
+.theme-taisho_roman .hero-title .outline-text {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #e6b422;
+}
+
+.theme-taisho_roman .hero-title .glitch {
+    color: #e6b422 !important;
+}
+
+.theme-taisho_roman .hero-title .glitch:hover {
+    color: #fce4d6 !important;
+    text-shadow: 2px 2px #330033;
+}
+
 .theme-taisho_roman .hero-subtitle {
     background: rgba(43, 27, 23, 0.9);
     border: 1px solid #c71585;

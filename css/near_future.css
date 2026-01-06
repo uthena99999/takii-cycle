@@ -93,6 +93,20 @@ body.theme-near_future {
     display: inline-block;
 }
 
+.theme-near_future .hero-title .outline-text {
+    color: transparent !important;
+    -webkit-text-stroke: 1px #0ff;
+}
+
+.theme-near_future .hero-title .glitch {
+    color: #fff !important;
+}
+
+.theme-near_future .hero-title .glitch:hover {
+    color: #0ff !important;
+    text-shadow: 2px 2px #f0f;
+}
+
 .theme-near_future .hero-subtitle {
     font-family: 'Rajdhani', sans-serif;
     color: #0ff;

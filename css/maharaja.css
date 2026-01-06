@@ -214,6 +214,24 @@ body.theme-maharaja {
 }
 
 /* Hero Text */
+.theme-maharaja .hero-title .glitch {
+    color: #d4af37 !important;
+    /* Base Gold */
+}
+
+.theme-maharaja .hero-title .outline-text {
+    color: transparent !important;
+    -webkit-text-stroke: 2px #d4af37;
+    /* Gold Outline */
+}
+
+.theme-maharaja .hero-title .glitch:hover {
+    color: #ffd700 !important;
+    /* Bright Gold Hover */
+    text-shadow: 2px 2px #fff;
+    /* White Shadow */
+}
+
 .theme-maharaja .hero-subtitle {
     background: rgba(0, 0, 0, 0.8) !important;
     border: 1px solid #d4af37;

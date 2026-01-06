@@ -58,10 +58,22 @@ body.theme-egypt {
     margin-bottom: 30px;
 }
 
+margin-bottom: 30px;
+}
+
 .theme-egypt .hero-title .outline-text {
     -webkit-text-stroke: 1px #e6c200;
-    color: transparent;
+    color: transparent !important;
     text-shadow: none;
+}
+
+.theme-egypt .hero-title .glitch {
+    color: #e6c200 !important;
+}
+
+.theme-egypt .hero-title .glitch:hover {
+    color: #fff !important;
+    text-shadow: 0 0 10px #e6c200;
 }
 
 .theme-egypt .hero-subtitle {
