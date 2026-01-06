@@ -199,6 +199,22 @@ body.theme-showa {
     font-weight: bold;
 }
 
+/* Shop Header Visibility */
+.theme-showa .shop-header h1 {
+    color: #d95e2a !important;
+    /* Retro Orange */
+    text-shadow: 2px 2px 0 #fff;
+    /* White sharp shadow */
+    font-family: 'Zen Old Mincho', serif;
+}
+
+.theme-showa .shop-header p {
+    color: #4a2315 !important;
+    /* Dark Brown */
+    font-weight: bold;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
 /* Fix Shop Product Cards */
 .theme-showa .card-title {
     color: #4a2315;
@@ -309,6 +325,22 @@ body.theme-showa {
 .theme-showa .support-desc {
     color: #4a2315 !important;
     font-weight: bold;
+}
+
+/* Forms & Filters */
+.theme-showa .filter-btn {
+    background: #f7f3e8;
+    color: #4a2315 !important;
+    border: 1px solid #4a2315;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.theme-showa .filter-btn.active,
+.theme-showa .filter-btn:hover {
+    background: #d95e2a;
+    color: #fff !important;
+    border-color: #d95e2a;
+    box-shadow: 2px 2px 0 #4a2315;
 }
 
 .theme-showa .support-table th {

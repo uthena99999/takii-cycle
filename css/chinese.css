@@ -378,14 +378,14 @@ body.theme-chinese {
     color: #fff !important;
 }
 
-.theme-chinese .btn-filter {
+.theme-chinese .filter-btn {
     background: #500000;
     color: #ffd700 !important;
     border: 1px solid #ffd700;
 }
 
-.theme-chinese .btn-filter.active,
-.theme-chinese .btn-filter:hover {
+.theme-chinese .filter-btn.active,
+.theme-chinese .filter-btn:hover {
     background: #ffd700;
     color: #8b0000 !important;
 }

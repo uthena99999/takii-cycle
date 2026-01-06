@@ -173,9 +173,9 @@ body.theme-europe {
 
 .theme-europe .filter-btn:hover,
 .theme-europe .filter-btn.active {
-    color: #1a252f;
+    color: #fff !important;
     border-color: #1a252f;
-    background: #f8f9fa;
+    background: #1a252f;
 }
 
 .theme-europe .card-title,
@@ -245,6 +245,7 @@ body.theme-europe {
     background: #1a252f;
     color: #fff;
 }
+
 /* Shop Page Purchase Benefits Support Section */
 .theme-europe .support-title,
 .theme-europe .support-subtitle,
@@ -291,6 +292,7 @@ body.theme-europe {
 .theme-europe .text-white-default {
     color: #1a252f !important;
 }
+
 .theme-europe .text-accent-default {
     color: #2c3e50 !important;
 }
@@ -300,28 +302,35 @@ body.theme-europe {
     background: #fff !important;
     border: none !important;
 }
+
 .theme-europe .campaign-panel {
     background: #f8f9fa !important;
     border: 1px solid #ddd !important;
     box-shadow: none !important;
 }
+
 .theme-europe .campaign-title {
     color: #1a252f !important;
     text-shadow: none !important;
     font-family: 'Playfair Display', serif;
 }
+
 .theme-europe .campaign-text {
     color: #2c3e50 !important;
 }
+
 .theme-europe .campaign-details {
     background: #fff !important;
     border: 1px solid #eee !important;
 }
-.theme-europe .campaign-note, .theme-europe .campaign-note a {
+
+.theme-europe .campaign-note,
+.theme-europe .campaign-note a {
     color: #555 !important;
 }
 
 /* Override Closed Text Visibility */
 .theme-europe .text-secondary-default {
-    color: #1a252f !important; /* Dark Blue Grey */
+    color: #1a252f !important;
+    /* Dark Blue Grey */
 }

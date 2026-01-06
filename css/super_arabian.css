@@ -321,15 +321,15 @@ body.theme-super_arabian {
     font-family: 'Aref Ruqaa', serif !important;
 }
 
-.theme-super_arabian .btn-filter {
+.theme-super_arabian .filter-btn {
     background: #000;
     color: #d4af37 !important;
     border: 1px solid #d4af37;
     border-radius: 0;
 }
 
-.theme-super_arabian .btn-filter.active,
-.theme-super_arabian .btn-filter:hover {
+.theme-super_arabian .filter-btn.active,
+.theme-super_arabian .filter-btn:hover {
     background: #d4af37;
     color: #000 !important;
 }

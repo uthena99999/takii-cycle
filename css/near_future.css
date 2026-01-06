@@ -342,14 +342,14 @@ body.theme-near_future {
     color: #0ff !important;
 }
 
-.theme-near_future .btn-filter {
+.theme-near_future .filter-btn {
     background: #000;
     color: #0ff !important;
     border: 1px solid #0ff;
 }
 
-.theme-near_future .btn-filter.active,
-.theme-near_future .btn-filter:hover {
+.theme-near_future .filter-btn.active,
+.theme-near_future .filter-btn:hover {
     background: #0ff;
     color: #000 !important;
     box-shadow: 0 0 10px #0ff;

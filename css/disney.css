@@ -360,16 +360,17 @@ body.theme-disney::before {
     color: #ffd700;
 }
 
-.theme-disney .btn-filter {
+.theme-disney .filter-btn {
     background: rgba(15, 32, 39, 0.8);
     color: #ffd700 !important;
     border: 1px solid #ffd700;
 }
 
-.theme-disney .btn-filter.active,
-.theme-disney .btn-filter:hover {
+.theme-disney .filter-btn.active,
+.theme-disney .filter-btn:hover {
     background: #ffd700;
     color: #0f2027 !important;
+    border-color: #ffd700;
 }
 
 /* Tables */

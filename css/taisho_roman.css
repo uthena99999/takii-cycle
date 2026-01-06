@@ -317,14 +317,14 @@ body.theme-taisho_roman::before {
     color: #fce4d6 !important;
 }
 
-.theme-taisho_roman .btn-filter {
+.theme-taisho_roman .filter-btn {
     background: #2b1b17;
     color: #e6b422 !important;
     border: 1px solid #c71585;
 }
 
-.theme-taisho_roman .btn-filter.active,
-.theme-taisho_roman .btn-filter:hover {
+.theme-taisho_roman .filter-btn.active,
+.theme-taisho_roman .filter-btn:hover {
     background: #c71585;
     color: #fff !important;
 }

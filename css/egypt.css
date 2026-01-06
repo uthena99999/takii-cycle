@@ -307,14 +307,14 @@ body.theme-egypt {
     color: #c9a573 !important;
 }
 
-.theme-egypt .btn-filter {
+.theme-egypt .filter-btn {
     background: #000;
     color: #c9a573 !important;
     border: 1px solid #e6c200;
 }
 
-.theme-egypt .btn-filter.active,
-.theme-egypt .btn-filter:hover {
+.theme-egypt .filter-btn.active,
+.theme-egypt .filter-btn:hover {
     background: #e6c200;
     color: #000 !important;
 }
