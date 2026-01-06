@@ -46,6 +46,12 @@ body.theme-taisho_roman::before {
     color: #fce4d6;
     font-family: 'Kaisei Decol', serif;
     position: relative;
+    transition: color 0.3s ease;
+}
+
+.theme-taisho_roman .nav-list a:hover {
+    color: #e6b422 !important;
+    text-shadow: 0 0 8px rgba(230, 180, 34, 0.6);
 }
 
 .theme-taisho_roman .nav-list a::after {
@@ -54,10 +60,11 @@ body.theme-taisho_roman::before {
     bottom: -5px;
     left: 0;
     width: 100%;
-    height: 1px;
-    background: #c71585;
+    height: 2px;
+    background: #e6b422;
     transform: scaleX(0);
-    transition: transform 0.3s;
+    transform-origin: center;
+    transition: transform 0.3s ease;
 }
 
 .theme-taisho_roman .nav-list a:hover::after {
@@ -107,6 +114,20 @@ body.theme-taisho_roman::before {
     color: #fff;
     /* Ensure text visible */
     transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Button Fix */
+.theme-taisho_roman .hero-btn .btn-main {
+    background: #800020 !important;
+    color: #fff !important;
+    border: 1px solid #e6b422;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.theme-taisho_roman .hero-btn .btn-main:hover {
+    background: #e6b422 !important;
+    color: #2b1b17 !important;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -195,38 +216,218 @@ body.theme-taisho_roman::before {
     border: 1px solid #c71585 !important;
 }
 
+
+/* =========================================
+   Global Theme Overrides & Visibility Fixes
+   ========================================= */
+
+/* Base Text & Headings */
+.theme-taisho_roman body,
+.theme-taisho_roman p,
+.theme-taisho_roman li,
+.theme-taisho_roman dd,
+.theme-taisho_roman dt,
+.theme-taisho_roman span,
+.theme-taisho_roman div,
+.theme-taisho_roman th,
+.theme-taisho_roman td,
+.theme-taisho_roman .text-muted {
+    color: #fce4d6 !important;
+    /* Pale Pink/Peach */
+    font-family: 'Shippori Mincho', serif !important;
+}
+
+.theme-taisho_roman h1,
+.theme-taisho_roman h2,
+.theme-taisho_roman h3,
+.theme-taisho_roman h4,
+.theme-taisho_roman h5,
+.theme-taisho_roman h6 {
+    color: #e6b422 !important;
+    /* Gold */
+    font-family: 'Kaisei Decol', serif !important;
+}
+
+.theme-taisho_roman a {
+    color: #c71585 !important;
+}
+
+/* Panels, Cards & Containers */
+.theme-taisho_roman .glass-panel,
+.theme-taisho_roman .product-card,
+.theme-taisho_roman .service-card,
+.theme-taisho_roman .card,
+.theme-taisho_roman .modal-content,
+.theme-taisho_roman .info-section .glass-panel,
+.theme-taisho_roman .glass-card {
+    background: #2b1b17 !important;
+    /* Dark Coffee */
+    border: 2px solid #c71585 !important;
+    outline: 2px solid #e6b422;
+    outline-offset: -6px;
+    box-shadow: 0 0 10px rgba(199, 21, 133, 0.3) !important;
+}
+
+/* About Page Specifics */
+.theme-taisho_roman .hero-subtitle {
+    background: #2b1b17;
+    color: #e6b422;
+    border: 1px solid #c71585;
+}
+
+.theme-taisho_roman .timeline-item .year {
+    background: #e6b422 !important;
+    color: #330033 !important;
+    border: 2px solid #330033 !important;
+}
+
+.theme-taisho_roman .gallery-label {
+    background: #330033;
+    color: #e6b422;
+    border: 1px solid #e6b422;
+}
+
+.theme-taisho_roman .bicycle-item h3 a {
+    color: #c71585 !important;
+}
+
+.theme-taisho_roman .link-tags a {
+    background: #3d2b25;
+    border: 1px solid #e6b422;
+    color: #fce4d6 !important;
+}
+
+.theme-taisho_roman .link-tags a:hover {
+    background: #c71585;
+    color: #fff !important;
+}
+
+/* Campaign Specifics */
 .theme-taisho_roman .campaign-note,
 .theme-taisho_roman .campaign-note a {
     color: #e6b422 !important;
 }
 
-/* Shop Info Section Theme Override */
-.theme-taisho_roman .info-section .glass-panel {
-    background: #2b1b17 !important;
-    border: 2px solid #c71585 !important;
-    outline: 1px solid #e6b422 !important;
-    outline-offset: -5px !important;
-}
-
-.theme-taisho_roman .info-section h3 {
-    color: #e6b422 !important;
-    font-family: 'Kaisei Decol', serif !important;
-}
-
-.theme-taisho_roman .info-section th,
-.theme-taisho_roman .info-section td,
-.theme-taisho_roman .info-section p,
-.theme-taisho_roman .info-section span,
-.theme-taisho_roman .info-section div {
+/* Forms & Filters */
+.theme-taisho_roman input,
+.theme-taisho_roman select,
+.theme-taisho_roman textarea {
+    background: #3d2b25 !important;
+    border: 1px solid #e6b422 !important;
     color: #fce4d6 !important;
 }
 
-.theme-taisho_roman .info-section a {
-    color: #c71585 !important;
+.theme-taisho_roman .btn-filter {
+    background: #2b1b17;
+    color: #e6b422 !important;
+    border: 1px solid #c71585;
 }
 
+.theme-taisho_roman .btn-filter.active,
+.theme-taisho_roman .btn-filter:hover {
+    background: #c71585;
+    color: #fff !important;
+}
+
+/* Tables */
+.theme-taisho_roman table th {
+    background-color: #3d2b25 !important;
+    color: #e6b422 !important;
+}
+
+.theme-taisho_roman table td {
+    border-bottom: 1px solid #c71585 !important;
+}
+
+/* Specialized Inner Elements */
 .theme-taisho_roman .info-safety-row,
 .theme-taisho_roman .info-service-row>div {
     background: #3d2b25 !important;
     border: 1px solid #c71585 !important;
+}
+
+/* Product/Shop Specifics */
+.theme-taisho_roman .product-card h3 {
+    color: #e6b422 !important;
+}
+
+
+/* Purchase Benefits & Support Fixes */
+.theme-taisho_roman .support-promo {
+    background: #2b1b17 !important;
+    border: 2px solid #c71585 !important;
+    outline: 2px solid #e6b422;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(199, 21, 133, 0.3) !important;
+}
+
+.theme-taisho_roman .support-title {
+    color: #e6b422 !important;
+    font-family: 'Kaisei Decol', serif !important;
+    border-bottom: 1px solid #c71585;
+}
+
+.theme-taisho_roman .support-subtitle {
+    color: #fce4d6 !important;
+    font-weight: bold;
+}
+
+.theme-taisho_roman .support-desc {
+    color: #fce4d6 !important;
+}
+
+.theme-taisho_roman .support-table th {
+    background: #3d2b25 !important;
+    color: #e6b422 !important;
+    border-bottom: 2px solid #e6b422 !important;
+}
+
+.theme-taisho_roman .support-table td {
+    border-bottom: 1px solid #c71585 !important;
+    color: #fce4d6 !important;
+}
+
+.theme-taisho_roman .td-menu-item {
+    color: #e6b422 !important;
+}
+
+.theme-taisho_roman .td-menu-sub {
+    color: #c71585 !important;
+}
+
+.theme-taisho_roman .td-regular {
+    color: #fce4d6 !important;
+}
+
+.theme-taisho_roman .td-support {
+    color: #e6b422 !important;
+    font-weight: bold;
+}
+
+.theme-taisho_roman .td-support-sub {
+    color: #c71585 !important;
+}
+
+
+/* Bicycle Lineup Fixes */
+.theme-taisho_roman .bicycle-item {
+    background: #2b1b17 !important;
+    border: 2px solid #c71585 !important;
+    outline: 2px solid #e6b422;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(199, 21, 133, 0.3);
+}
+
+.theme-taisho_roman .bicycle-item h3 a {
+    color: #e6b422 !important;
+}
+
+.theme-taisho_roman .bicycle-item p {
+    color: #fce4d6 !important;
+}
+
+.theme-taisho_roman .bicycle-note p,
+.theme-taisho_roman .bicycle-note a {
+    color: #c71585 !important;
 }

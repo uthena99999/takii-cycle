@@ -98,6 +98,21 @@ body.theme-showa {
     box-shadow: 2px 2px 0 #000;
 }
 
+/* Hero Button Fix */
+.theme-showa .hero-btn .btn-main {
+    background: #d95e2a !important;
+    color: #fff !important;
+    border: 2px solid #4a2315;
+    font-weight: 800;
+    box-shadow: 4px 4px 0 #4a2315;
+}
+
+.theme-showa .hero-btn .btn-main:hover {
+    background: #4a2315 !important;
+    color: #d95e2a !important;
+    box-shadow: 2px 2px 0 #d95e2a;
+}
+
 /* Bento Grid */
 .theme-showa .section-title {
     color: #4a2315;
@@ -202,9 +217,11 @@ body.theme-showa {
     color: #4a2315 !important;
 }
 
-background: #d99a2a;
-color: #fff;
-border: 2px solid #4a2315;
+
+.theme-showa .year {
+    background: #d99a2a !important;
+    color: #fff !important;
+    border: 2px solid #4a2315 !important;
 }
 
 /* Fix Repair Page Cards */
@@ -274,6 +291,7 @@ border: 2px solid #4a2315;
     color: #fff !important;
     border-color: #d95e2a !important;
 }
+
 /* Shop Page Purchase Benefits Support Section */
 .theme-showa .support-title {
     color: #4a2315 !important;
@@ -319,7 +337,8 @@ border: 2px solid #4a2315;
 }
 
 .theme-showa .td-support {
-    color: #d95e2a !important; /* Retro orange highlight */
+    color: #d95e2a !important;
+    /* Retro orange highlight */
     font-weight: bold;
 }
 
@@ -338,6 +357,7 @@ border: 2px solid #4a2315;
 .theme-showa .text-white-default {
     color: #4a2315 !important;
 }
+
 .theme-showa .text-accent-default {
     color: #d95e2a !important;
 }
@@ -347,29 +367,36 @@ border: 2px solid #4a2315;
     background: #e8e4d9 !important;
     border: none !important;
 }
+
 .theme-showa .campaign-panel {
     background: #fff !important;
     border: 3px double #4a2315 !important;
     box-shadow: 5px 5px 0 rgba(74, 35, 21, 0.2) !important;
 }
+
 .theme-showa .campaign-title {
     color: #d95e2a !important;
     text-shadow: none !important;
     font-family: 'Zen Old Mincho', serif;
 }
+
 .theme-showa .campaign-text {
     color: #4a2315 !important;
     font-weight: bold;
 }
+
 .theme-showa .campaign-details {
     background: #f7f3e8 !important;
     border: 1px solid #4a2315 !important;
 }
-.theme-showa .campaign-note, .theme-showa .campaign-note a {
+
+.theme-showa .campaign-note,
+.theme-showa .campaign-note a {
     color: #8c6a4e !important;
 }
 
 /* Override Closed Text Visibility */
 .theme-showa .text-secondary-default {
-    color: #4a2315 !important; /* Dark Brown */
+    color: #4a2315 !important;
+    /* Dark Brown */
 }

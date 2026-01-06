@@ -242,39 +242,218 @@ body.theme-near_future {
     color: #f0f !important;
 }
 
-/* Shop Info Section Theme Override */
-.theme-near_future .info-section .glass-panel {
-    background: rgba(5, 5, 5, 0.95) !important;
-    border: 1px solid #0ff !important;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2) !important;
-    border-radius: 0 !important;
-}
+/* =========================================
+   Global Theme Overrides & Visibility Fixes
+   ========================================= */
 
-.theme-near_future .info-section h3 {
-    color: #fff !important;
-    text-shadow: 2px 0 #0ff, -2px 0 #f0f;
-    font-family: 'Orbitron', sans-serif !important;
-}
-
-.theme-near_future .info-section th,
-.theme-near_future .info-section td,
-.theme-near_future .info-section p,
-.theme-near_future .info-section span,
-.theme-near_future .info-section div {
+/* Base Text & Headings */
+.theme-near_future body,
+.theme-near_future p,
+.theme-near_future li,
+.theme-near_future dd,
+.theme-near_future dt,
+.theme-near_future span,
+.theme-near_future div,
+.theme-near_future th,
+.theme-near_future td,
+.theme-near_future .text-muted {
     color: #0ff !important;
+    /* Cyan */
     font-family: 'Rajdhani', sans-serif !important;
 }
 
-.theme-near_future .info-section a {
+.theme-near_future h1,
+.theme-near_future h2,
+.theme-near_future h3,
+.theme-near_future h4,
+.theme-near_future h5,
+.theme-near_future h6 {
+    color: #fff !important;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+.theme-near_future a {
+    color: #f0f !important;
+    /* Magenta */
+}
+
+/* Panels, Cards & Containers */
+.theme-near_future .glass-panel,
+.theme-near_future .product-card,
+.theme-near_future .service-card,
+.theme-near_future .card,
+.theme-near_future .modal-content,
+.theme-near_future .info-section .glass-panel,
+.theme-near_future .glass-card {
+    background: rgba(5, 5, 5, 0.95) !important;
+    border: 1px solid #0ff !important;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3) !important;
+    border-radius: 0 !important;
+}
+
+/* About Page Specifics */
+.theme-near_future .hero-subtitle {
+    background: #000;
+    color: #0ff;
+    border: 1px solid #0ff;
+}
+
+.theme-near_future .timeline-item .year {
+    background: #0ff !important;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+    box-shadow: 0 0 10px #0ff;
+}
+
+.theme-near_future .gallery-label {
+    background: #000;
+    color: #0ff;
+    border: 1px solid #0ff;
+}
+
+.theme-near_future .bicycle-item h3 a {
     color: #f0f !important;
 }
 
+.theme-near_future .link-tags a {
+    background: #000;
+    border: 1px solid #0ff;
+    color: #0ff !important;
+}
+
+.theme-near_future .link-tags a:hover {
+    background: #0ff;
+    color: #000 !important;
+}
+
+/* Campaign Specifics */
+.theme-near_future .campaign-note,
+.theme-near_future .campaign-note a {
+    color: #f0f !important;
+}
+
+/* Forms & Filters */
+.theme-near_future input,
+.theme-near_future select,
+.theme-near_future textarea {
+    background: #000 !important;
+    border: 1px solid #0ff !important;
+    color: #0ff !important;
+}
+
+.theme-near_future .btn-filter {
+    background: #000;
+    color: #0ff !important;
+    border: 1px solid #0ff;
+}
+
+.theme-near_future .btn-filter.active,
+.theme-near_future .btn-filter:hover {
+    background: #0ff;
+    color: #000 !important;
+    box-shadow: 0 0 10px #0ff;
+}
+
+/* Tables */
+.theme-near_future table th {
+    background-color: rgba(0, 255, 255, 0.1) !important;
+    color: #fff !important;
+    text-shadow: 0 0 5px #0ff;
+}
+
+.theme-near_future table td {
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3) !important;
+}
+
+/* Specialized Inner Elements */
 .theme-near_future .info-safety-row,
 .theme-near_future .info-service-row>div {
     background: rgba(0, 255, 255, 0.05) !important;
     border: 1px solid #f0f !important;
 }
 
-.theme-near_future .info-section .text-muted {
-    color: #008888 !important;
+/* Product/Shop Specifics */
+.theme-near_future .product-card h3 {
+    color: #fff !important;
+}
+
+
+/* Purchase Benefits & Support Fixes */
+.theme-near_future .support-promo {
+    background: rgba(5, 5, 5, 0.95) !important;
+    border: 1px solid #0ff !important;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3) !important;
+    padding: 2rem;
+    border-radius: 0;
+}
+
+.theme-near_future .support-title {
+    color: #0ff !important;
+    font-family: 'Orbitron', sans-serif !important;
+    border-bottom: 1px solid #0ff;
+}
+
+.theme-near_future .support-subtitle {
+    color: #f0f !important;
+    font-weight: bold;
+}
+
+.theme-near_future .support-desc {
+    color: #fff !important;
+}
+
+.theme-near_future .support-table th {
+    background: rgba(0, 255, 255, 0.1) !important;
+    color: #0ff !important;
+    border-bottom: 2px solid #0ff !important;
+}
+
+.theme-near_future .support-table td {
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+.theme-near_future .td-menu-item {
+    color: #0ff !important;
+}
+
+.theme-near_future .td-menu-sub {
+    color: #f0f !important;
+}
+
+.theme-near_future .td-regular {
+    color: #fff !important;
+}
+
+.theme-near_future .td-support {
+    color: #f0f !important;
+    font-weight: bold;
+}
+
+.theme-near_future .td-support-sub {
+    color: #0ff !important;
+}
+
+
+/* Bicycle Lineup Fixes */
+.theme-near_future .bicycle-item {
+    background: rgba(5, 5, 5, 0.95) !important;
+    border: 1px solid #0ff !important;
+    border-radius: 0;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.theme-near_future .bicycle-item h3 a {
+    color: #f0f !important;
+}
+
+.theme-near_future .bicycle-item p {
+    color: #0ff !important;
+}
+
+.theme-near_future .bicycle-note p,
+.theme-near_future .bicycle-note a {
+    color: #f0f !important;
 }

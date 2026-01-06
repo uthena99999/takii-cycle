@@ -117,7 +117,7 @@ body.theme-disney::before {
 
 .theme-disney .btn-main {
     background: linear-gradient(45deg, #ffd700, #fdb931);
-    color: #0f2027;
+    color: #0f2027 !important;
     border: none;
     border-radius: 50px;
     font-family: 'Cinzel', serif;
@@ -128,6 +128,8 @@ body.theme-disney::before {
 .theme-disney .btn-main:hover {
     box-shadow: 0 0 30px rgba(255, 215, 0, 0.9);
     transform: scale(1.05);
+    background: #0f2027;
+    color: #ffd700 !important;
 }
 
 /* Services */
@@ -256,41 +258,221 @@ body.theme-disney::before {
     border: 1px solid rgba(255, 215, 0, 0.3) !important;
 }
 
+
+/* =========================================
+   Global Theme Overrides & Visibility Fixes
+   ========================================= */
+
+/* Base Text & Headings */
+.theme-disney body,
+.theme-disney p,
+.theme-disney li,
+.theme-disney dd,
+.theme-disney dt,
+.theme-disney span,
+.theme-disney div,
+.theme-disney th,
+.theme-disney td,
+.theme-disney .text-muted {
+    color: #fff !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+.theme-disney h1,
+.theme-disney h2,
+.theme-disney h3,
+.theme-disney h4,
+.theme-disney h5,
+.theme-disney h6 {
+    color: #ffd700 !important;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    font-family: 'Cinzel', serif !important;
+}
+
+.theme-disney a {
+    color: #87cefa !important;
+}
+
+/* Panels, Cards & Containers */
+.theme-disney .glass-panel,
+.theme-disney .product-card,
+.theme-disney .service-card,
+.theme-disney .card,
+.theme-disney .modal-content,
+.theme-disney .info-section .glass-panel,
+.theme-disney .glass-card {
+    background: rgba(15, 32, 39, 0.95) !important;
+    border: 1px solid #ffd700 !important;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* About Page Specifics */
+.theme-disney .hero-subtitle {
+    background: rgba(15, 32, 39, 0.8) !important;
+    color: #ffd700 !important;
+    border: 1px solid #ffd700;
+}
+
+.theme-disney .timeline-item .year {
+    background: #ffd700 !important;
+    color: #0f2027 !important;
+}
+
+.theme-disney .gallery-label {
+    background: rgba(15, 32, 39, 0.9) !important;
+    color: #ffd700 !important;
+    border: 1px solid #ffd700;
+}
+
+.theme-disney .bicycle-item h3 a {
+    color: #87cefa !important;
+}
+
+.theme-disney .link-tags a {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid #ffd700 !important;
+    color: #fff !important;
+}
+
+.theme-disney .link-tags a:hover {
+    background: #ffd700 !important;
+    color: #0f2027 !important;
+}
+
+/* Campaign Specifics (Keep vivid) */
 .theme-disney .campaign-note,
 .theme-disney .campaign-note a {
     color: #87cefa !important;
 }
 
-/* Shop Info Section Theme Override */
-.theme-disney .info-section .glass-panel {
-    background: rgba(15, 32, 39, 0.9) !important;
+/* Forms & Filters */
+.theme-disney input,
+.theme-disney select,
+.theme-disney textarea {
+    background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid #ffd700 !important;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2) !important;
-}
-
-.theme-disney .info-section h3 {
-    color: #ffd700 !important;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
-}
-
-.theme-disney .info-section th,
-.theme-disney .info-section td,
-.theme-disney .info-section p,
-.theme-disney .info-section span,
-.theme-disney .info-section div {
     color: #fff !important;
 }
 
-.theme-disney .info-section .text-muted {
-    color: #ccc !important;
+.theme-disney select option {
+    background-color: #0f2027;
+    color: #ffd700;
 }
 
-.theme-disney .info-section a {
-    color: #87cefa !important;
+.theme-disney .btn-filter {
+    background: rgba(15, 32, 39, 0.8);
+    color: #ffd700 !important;
+    border: 1px solid #ffd700;
 }
 
+.theme-disney .btn-filter.active,
+.theme-disney .btn-filter:hover {
+    background: #ffd700;
+    color: #0f2027 !important;
+}
+
+/* Tables */
+.theme-disney table th {
+    background-color: rgba(255, 215, 0, 0.1) !important;
+    color: #ffd700 !important;
+}
+
+.theme-disney table td {
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2) !important;
+}
+
+/* Specialized Inner Elements */
 .theme-disney .info-safety-row,
 .theme-disney .info-service-row>div {
     background: rgba(255, 255, 255, 0.05) !important;
     border: 1px solid rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Product/Shop Specifics */
+.theme-disney .product-card h3 {
+    color: #ffd700 !important;
+}
+
+
+/* Purchase Benefits & Support Fixes */
+.theme-disney .support-promo {
+    background: rgba(15, 32, 39, 0.95) !important;
+    border: 1px solid #ffd700 !important;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3) !important;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.theme-disney .support-title {
+    color: #ffd700 !important;
+    font-family: 'Great Vibes', cursive !important;
+    border-bottom: 2px solid #ffd700;
+}
+
+.theme-disney .support-subtitle {
+    color: #87cefa !important;
+    font-weight: bold;
+}
+
+.theme-disney .support-desc {
+    color: #e0e0e0 !important;
+}
+
+.theme-disney .support-table th {
+    background: rgba(255, 215, 0, 0.1) !important;
+    color: #ffd700 !important;
+    border-bottom: 2px solid #ffd700 !important;
+}
+
+.theme-disney .support-table td {
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2) !important;
+    color: #fff !important;
+}
+
+.theme-disney .td-menu-item {
+    color: #ffd700 !important;
+    font-weight: bold;
+}
+
+.theme-disney .td-menu-sub {
+    color: #ddd !important;
+}
+
+.theme-disney .td-regular {
+    color: #fff !important;
+}
+
+.theme-disney .td-support {
+    color: #87cefa !important;
+    font-weight: bold;
+}
+
+.theme-disney .td-support-sub {
+    color: #ddd !important;
+}
+
+
+/* Bicycle Lineup Fixes */
+.theme-disney .bicycle-item {
+    background: rgba(15, 32, 39, 0.8) !important;
+    border: 1px solid #ffd700 !important;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.theme-disney .bicycle-item h3 a {
+    color: #ffd700 !important;
+    font-family: 'Cinzel', serif;
+}
+
+.theme-disney .bicycle-item p {
+    color: #e0e0e0 !important;
+}
+
+.theme-disney .bicycle-note p,
+.theme-disney .bicycle-note a {
+    color: #87cefa !important;
 }

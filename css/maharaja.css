@@ -7,97 +7,213 @@
     --color-secondary: #800020;
     /* Deep Burgundy */
     --color-accent: #ffd700;
-    --glass-bg: rgba(20, 10, 5, 0.85);
+    --glass-bg: rgba(20, 10, 5, 0.95);
+    /* Darker background for contrast */
     --glass-border: 1px solid rgba(212, 175, 55, 0.3);
     --font-heading: 'Times New Roman', serif;
     --font-body: 'Noto Serif JP', serif;
 }
 
-body {
+/* Base Styles */
+body.theme-maharaja {
     background: var(--color-bg);
     background-image: radial-gradient(circle at 50% 50%, #1a0f00 0%, #000000 100%);
     color: var(--color-text);
     font-family: var(--font-body);
 }
 
-.header {
+.theme-maharaja .header {
     background: linear-gradient(to bottom, #000 0%, rgba(20, 10, 0, 0.9) 100%);
     border-bottom: 2px solid var(--color-primary);
 }
 
-.logo a {
+.theme-maharaja .logo a {
     font-family: var(--font-heading);
     color: var(--color-primary);
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
 
-    .glass-panel,
-    .glass-card,
-    .product-card {
-        background: var(--glass-bg);
-        border: 1px solid var(--color-primary);
-        box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
-    }
+/* Fix CSS Syntax Error & Apply Styles */
+.theme-maharaja .glass-panel,
+.theme-maharaja .glass-card,
+.theme-maharaja .product-card,
+.theme-maharaja .bento-item,
+.theme-maharaja .support-card,
+.theme-maharaja .campaign-panel {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--color-primary) !important;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+}
 
-    .btn-primary,
-    .cta-button {
-        background: linear-gradient(45deg, #d4af37, #f7e698, #d4af37);
-        color: #000;
-        border: 1px solid #fff;
-        font-family: var(--font-heading);
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-    }
+.theme-maharaja .btn-primary,
+.theme-maharaja .cta-button,
+.theme-maharaja .btn-main {
+    background: linear-gradient(45deg, #d4af37, #f7e698, #d4af37);
+    color: #000 !important;
+    /* Ensure black text on gold button */
+    border: 1px solid #fff;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
 
-    .btn-primary:hover,
-    .cta-button:hover {
-        box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
-        transform: translateY(-2px);
-    }
+.theme-maharaja .btn-primary:hover,
+.theme-maharaja .cta-button:hover,
+.theme-maharaja .btn-main:hover {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+    background: #fff;
+}
 
-    /* Price Table Override */
-    .price-table th {
-        border-bottom: 2px solid var(--color-primary);
-        color: var(--color-primary);
-        font-family: var(--font-heading);
-    }
+/* Price Table Override */
+.theme-maharaja .price-table th {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary) !important;
+    font-family: var(--font-heading);
+}
 
-    /* Shop Layout */
-    .product-card {
-        border-radius: 4px;
-    }
+.theme-maharaja .price-table td,
+.theme-maharaja .price-table-wrapper h3,
+.theme-maharaja .delivery-desc {
+    color: var(--color-text) !important;
+}
 
-    .card-title {
-        font-family: var(--font-heading);
-        color: var(--color-primary);
-    }
+/* Shop Layout */
+.theme-maharaja .product-card {
+    border-radius: 4px;
+}
 
-    .card-price {
-        color: var(--color-accent);
-    }
+.theme-maharaja .card-title {
+    font-family: var(--font-heading);
+    color: var(--color-primary) !important;
+}
 
-    /* Footer */
-    .footer {
-        border-top: 2px solid var(--color-primary);
-        background: #050300;
-    }
+.theme-maharaja .card-desc {
+    color: var(--color-text) !important;
+}
 
-    /* Theme Switcher Style */
-    .theme-switcher select {
-        background: #000;
-        color: var(--color-primary);
-        border: 1px solid var(--color-primary);
-    }
+.theme-maharaja .card-price {
+    color: var(--color-accent) !important;
+}
 
-    /* Navigation Fixes */
-    .nav-list a::before {
-        content: none !important;
-        /* Disable double text effect from base theme */
-    }
+/* Footer */
+.theme-maharaja .footer {
+    border-top: 2px solid var(--color-primary);
+    background: #050300;
+}
 
-    .nav-list a:hover {
-        background: transparent !important;
-        /* Prevent yellow block */
-        color: var(--color-primary);
-        text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
-    }
+/* Theme Switcher Style */
+.theme-maharaja .theme-switcher select {
+    background: #000;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+/* Navigation Fixes */
+.theme-maharaja .nav-list a::before {
+    content: none !important;
+}
+
+.theme-maharaja .nav-list a:hover {
+    background: transparent !important;
+    color: var(--color-primary) !important;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+}
+
+
+/* =========================================
+   Global Text Visibility Overrides 
+   ========================================= */
+
+/* Force all text to be light in this dark theme */
+.theme-maharaja p,
+.theme-maharaja span,
+.theme-maharaja div,
+.theme-maharaja li,
+.theme-maharaja dt,
+.theme-maharaja dd,
+.theme-maharaja th,
+.theme-maharaja td,
+.theme-maharaja h1,
+.theme-maharaja h2,
+.theme-maharaja h3,
+.theme-maharaja h4,
+.theme-maharaja h5,
+.theme-maharaja h6,
+.theme-maharaja label,
+.theme-maharaja input,
+.theme-maharaja select,
+.theme-maharaja textarea,
+.theme-maharaja .text-muted {
+    color: #f0e6d2 !important;
+    /* Cream/Gold White */
+}
+
+/* Exceptions for specific elements that need color */
+.theme-maharaja h1,
+.theme-maharaja h2,
+.theme-maharaja h3,
+.theme-maharaja h4,
+.theme-maharaja a,
+.theme-maharaja .section-title,
+.theme-maharaja .card-title,
+.theme-maharaja .support-title,
+.theme-maharaja .campaign-title {
+    color: #d4af37 !important;
+    /* Gold */
+}
+
+.theme-maharaja .text-accent-default,
+.theme-maharaja strong,
+.theme-maharaja b {
+    color: #ffd700 !important;
+    /* Bright Gold */
+}
+
+/* Inputs background */
+.theme-maharaja input,
+.theme-maharaja select,
+.theme-maharaja textarea {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid #d4af37 !important;
+}
+
+/* Hero Text */
+.theme-maharaja .hero-subtitle {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid #d4af37;
+    color: #ffd700 !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* About Page Timeline */
+.theme-maharaja .timeline-item .year {
+    background: #d4af37 !important;
+    color: #000 !important;
+    border: 2px solid #fff;
+}
+
+/* Bento Label */
+.theme-maharaja .bento-label {
+    background: #d4af37 !important;
+    color: #000 !important;
+}
+
+/* Link Tags / Gallery Labels */
+.theme-maharaja .gallery-label {
+    background: #000 !important;
+    color: #d4af37 !important;
+    border: 1px solid #d4af37;
+}
+
+.theme-maharaja .link-tags a {
+    background: #000 !important;
+    border: 1px solid #d4af37;
+    color: #d4af37 !important;
+}
+
+.theme-maharaja .link-tags a:hover {
+    background: #d4af37 !important;
+    color: #000 !important;
+}

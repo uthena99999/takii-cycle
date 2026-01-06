@@ -87,6 +87,20 @@ body.theme-egypt {
     box-shadow: inset 0 0 0 2px #000;
 }
 
+/* Hero Button Fix */
+.theme-egypt .hero-btn .btn-main {
+    background: #e6c200 !important;
+    color: #000 !important;
+    border: 3px double #000;
+    font-weight: 800;
+}
+
+.theme-egypt .hero-btn .btn-main:hover {
+    background: #000 !important;
+    color: #e6c200 !important;
+    border-color: #e6c200;
+}
+
 /* Bento Grid */
 .theme-egypt .section-title {
     color: #e6c200;
@@ -186,38 +200,223 @@ body.theme-egypt {
     border: 1px solid #e6c200 !important;
 }
 
+
+/* =========================================
+   Global Theme Overrides & Visibility Fixes
+   ========================================= */
+
+/* Base Text & Headings */
+.theme-egypt body,
+.theme-egypt p,
+.theme-egypt li,
+.theme-egypt dd,
+.theme-egypt dt,
+.theme-egypt span,
+.theme-egypt div,
+.theme-egypt th,
+.theme-egypt td,
+.theme-egypt .text-muted {
+    color: #c9a573 !important;
+    /* Sand/Gold */
+    font-family: 'Cinzel', serif !important;
+}
+
+.theme-egypt h1,
+.theme-egypt h2,
+.theme-egypt h3,
+.theme-egypt h4,
+.theme-egypt h5,
+.theme-egypt h6 {
+    color: #e6c200 !important;
+    /* Bright Gold */
+    font-family: 'Cinzel', serif !important;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e6c200;
+    display: inline-block;
+}
+
+.theme-egypt a {
+    color: #e6c200 !important;
+    text-decoration: none;
+}
+
+.theme-egypt a:hover {
+    text-decoration: underline;
+}
+
+/* Panels, Cards & Containers */
+.theme-egypt .glass-panel,
+.theme-egypt .product-card,
+.theme-egypt .service-card,
+.theme-egypt .card,
+.theme-egypt .modal-content,
+.theme-egypt .info-section .glass-panel,
+.theme-egypt .glass-card {
+    background: #000 !important;
+    border: 3px double #e6c200 !important;
+    box-shadow: none !important;
+    border-radius: 4px;
+}
+
+/* About Page Specifics */
+.theme-egypt .hero-subtitle {
+    background: #000;
+    color: #c9a573;
+    border: 1px solid #e6c200;
+}
+
+.theme-egypt .timeline-item .year {
+    background: #e6c200 !important;
+    color: #000 !important;
+    border: 2px solid #000 !important;
+}
+
+.theme-egypt .gallery-label {
+    background: #000;
+    color: #e6c200;
+    border: 1px solid #e6c200;
+}
+
+.theme-egypt .bicycle-item h3 a {
+    color: #e6c200 !important;
+}
+
+.theme-egypt .link-tags a {
+    background: #000;
+    border: 1px solid #e6c200;
+    color: #c9a573 !important;
+}
+
+.theme-egypt .link-tags a:hover {
+    background: #e6c200;
+    color: #000 !important;
+}
+
+/* Campaign Specifics */
 .theme-egypt .campaign-note,
 .theme-egypt .campaign-note a {
     color: #e6c200 !important;
 }
 
-/* Shop Info Section Theme Override */
-.theme-egypt .info-section .glass-panel {
-    background: #000 !important;
-    border: 3px double #e6c200 !important;
-}
-
-.theme-egypt .info-section h3 {
-    color: #e6c200 !important;
-    font-family: 'Cinzel', serif !important;
-    border-bottom: 1px solid #e6c200;
-    display: inline-block;
-}
-
-.theme-egypt .info-section th,
-.theme-egypt .info-section td,
-.theme-egypt .info-section p,
-.theme-egypt .info-section span,
-.theme-egypt .info-section div {
+/* Forms & Filters */
+.theme-egypt input,
+.theme-egypt select,
+.theme-egypt textarea {
+    background: #111 !important;
+    border: 1px solid #e6c200 !important;
     color: #c9a573 !important;
 }
 
-.theme-egypt .info-section a {
-    color: #e6c200 !important;
+.theme-egypt .btn-filter {
+    background: #000;
+    color: #c9a573 !important;
+    border: 1px solid #e6c200;
 }
 
+.theme-egypt .btn-filter.active,
+.theme-egypt .btn-filter:hover {
+    background: #e6c200;
+    color: #000 !important;
+}
+
+/* Tables */
+.theme-egypt table th {
+    background-color: #111 !important;
+    color: #e6c200 !important;
+    border-bottom: 2px solid #e6c200 !important;
+}
+
+.theme-egypt table td {
+    border-bottom: 1px solid #333 !important;
+}
+
+/* Specialized Inner Elements */
 .theme-egypt .info-safety-row,
 .theme-egypt .info-service-row>div {
     background: #111 !important;
     border: 1px solid #e6c200 !important;
+}
+
+/* Product/Shop Specifics */
+.theme-egypt .product-card h3 {
+    color: #e6c200 !important;
+    border: none;
+}
+
+
+/* Purchase Benefits & Support Fixes */
+.theme-egypt .support-promo {
+    background: #000 !important;
+    border: 3px double #e6c200 !important;
+    box-shadow: none !important;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.theme-egypt .support-title {
+    color: #e6c200 !important;
+    font-family: 'Cinzel', serif !important;
+    border-bottom: 1px solid #e6c200;
+}
+
+.theme-egypt .support-subtitle {
+    color: #c9a573 !important;
+    font-weight: bold;
+}
+
+.theme-egypt .support-desc {
+    color: #e6c200 !important;
+}
+
+.theme-egypt .support-table th {
+    background: #111 !important;
+    color: #e6c200 !important;
+    border-bottom: 2px solid #e6c200 !important;
+}
+
+.theme-egypt .support-table td {
+    border-bottom: 1px solid #333 !important;
+    color: #c9a573 !important;
+}
+
+.theme-egypt .td-menu-item {
+    color: #e6c200 !important;
+}
+
+.theme-egypt .td-menu-sub {
+    color: #888 !important;
+}
+
+.theme-egypt .td-regular {
+    color: #c9a573 !important;
+}
+
+.theme-egypt .td-support {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.theme-egypt .td-support-sub {
+    color: #888 !important;
+}
+
+
+/* Bicycle Lineup Fixes */
+.theme-egypt .bicycle-item {
+    background: #000 !important;
+    border: 3px double #e6c200 !important;
+    padding: 1.5rem;
+}
+
+.theme-egypt .bicycle-item h3 a {
+    color: #e6c200 !important;
+}
+
+.theme-egypt .bicycle-item p {
+    color: #c9a573 !important;
+}
+
+.theme-egypt .bicycle-note p,
+.theme-egypt .bicycle-note a {
+    color: #e6c200 !important;
 }

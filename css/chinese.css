@@ -37,8 +37,10 @@ body.theme-chinese {
 }
 
 .theme-chinese .nav-list a:hover {
-    background: #ffd700;
-    color: #8b0000;
+    background: #ffd700 !important;
+    color: #8b0000 !important;
+    text-shadow: none !important;
+    border-color: #ffd700 !important;
 }
 
 /* Hero */
@@ -59,8 +61,8 @@ body.theme-chinese {
 }
 
 .theme-chinese .hero-subtitle {
-    background: #fff;
-    color: #8b0000;
+    background: #8b0000;
+    color: #ffd700;
     padding: 15px;
     border-radius: 10px;
     border: 2px solid #ffd700;
@@ -94,6 +96,21 @@ body.theme-chinese {
     color: #a40000;
 }
 
+/* Hero Button Fix */
+.theme-chinese .hero-btn .btn-main {
+    background: #ffd700 !important;
+    color: #8b0000 !important;
+    font-weight: 800;
+    border: 2px solid #8b0000;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+}
+
+.theme-chinese .hero-btn .btn-main:hover {
+    background: #8b0000 !important;
+    color: #ffd700 !important;
+    border-color: #ffd700;
+}
+
 /* Bento Grid */
 .theme-chinese .section-title {
     color: #ffd700;
@@ -105,18 +122,18 @@ body.theme-chinese {
 }
 
 .theme-chinese .bento-item {
-    background: #fffbf0;
-    /* Cream */
-    border: 4px solid #8b0000;
+    background: rgba(139, 0, 0, 0.95);
+    /* Dark Red */
+    border: 4px solid #ffd700;
     border-radius: 15px;
     box-shadow: 5px 5px 0 #ffd700;
 }
 
 /* Fix Readability for Box Content over Images */
 .theme-chinese .bento-content {
-    background: rgba(255, 251, 240, 0.9);
-    /* Opaque cream background */
-    border: 2px solid #8b0000;
+    background: transparent;
+    /* Removed opaque cream */
+    border: 2px solid #ffd700;
     border-radius: 10px;
     padding: 1rem;
     margin: 1rem;
@@ -129,7 +146,7 @@ body.theme-chinese {
 }
 
 .theme-chinese .bento-item p {
-    color: #555;
+    color: #fff;
     font-family: 'Noto Serif SC', serif;
 }
 
@@ -147,7 +164,7 @@ body.theme-chinese {
 }
 
 .theme-chinese .support-card {
-    background: #fff;
+    background: rgba(139, 0, 0, 0.95);
     border: 2px solid #ffd700;
     border-radius: 50% 50% 10px 10px;
     /* Window shape-ish */
@@ -158,7 +175,7 @@ body.theme-chinese {
 }
 
 .theme-chinese .support-card p {
-    color: #555;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -172,21 +189,24 @@ body.theme-chinese {
 
 
 /* Fix Shop Product Cards */
+/* Fix Shop Product Cards */
 .theme-chinese .card-info {
-    background: #fffbf0;
-    /* Cream background like bento */
-    border: 2px solid #8b0000;
+    background: rgba(139, 0, 0, 0.95);
+    /* Dark Red */
+    border: none;
+    /* Removed redundant border */
+    border-top: 2px solid #ffd700;
+    /* Only separate from image */
     border-radius: 0 0 10px 10px;
     padding: 1rem;
-    margin-top: -5px;
-    /* Connect to image */
     position: relative;
     z-index: 2;
 }
 
 .theme-chinese .image-container,
 .theme-chinese .card-image {
-    border: 2px solid #8b0000;
+    border: none;
+    /* Removed redundant border */
     border-bottom: none;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
@@ -197,7 +217,7 @@ body.theme-chinese {
 }
 
 .theme-chinese .card-desc {
-    color: #555;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -258,42 +278,220 @@ body.theme-chinese {
     border: 2px solid #ffd700 !important;
 }
 
+
+/* =========================================
+   Global Theme Overrides & Visibility Fixes
+   ========================================= */
+
+/* Base Text & Headings */
+.theme-chinese body,
+.theme-chinese p,
+.theme-chinese li,
+.theme-chinese dd,
+.theme-chinese dt,
+.theme-chinese span,
+.theme-chinese div,
+.theme-chinese th,
+.theme-chinese td,
+.theme-chinese .text-muted {
+    color: #fff !important;
+    font-family: 'Noto Serif SC', serif !important;
+}
+
+.theme-chinese h1,
+.theme-chinese h2,
+.theme-chinese h3,
+.theme-chinese h4,
+.theme-chinese h5,
+.theme-chinese h6 {
+    color: #ffd700 !important;
+    font-family: 'Ma Shan Zheng', cursive !important;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.theme-chinese a {
+    color: #ffd700 !important;
+    text-decoration: underline;
+}
+
+/* Panels, Cards & Containers */
+.theme-chinese .glass-panel,
+.theme-chinese .product-card,
+.theme-chinese .service-card,
+.theme-chinese .card,
+.theme-chinese .modal-content,
+.theme-chinese .info-section .glass-panel,
+.theme-chinese .glass-card {
+    background: rgba(139, 0, 0, 0.95) !important;
+    /* Dark Red */
+    border: 2px solid #ffd700 !important;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3) !important;
+}
+
+/* About Page Specifics */
+.theme-chinese .hero-subtitle {
+    background: #8b0000;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+}
+
+.theme-chinese .timeline-item .year {
+    background: #ffd700 !important;
+    color: #8b0000 !important;
+    border: 2px solid #8b0000 !important;
+}
+
+.theme-chinese .gallery-label {
+    background: #8b0000;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+}
+
+.theme-chinese .bicycle-item h3 a {
+    color: #ffd700 !important;
+    text-decoration: none;
+}
+
+.theme-chinese .link-tags a {
+    background: #500000 !important;
+    border: 1px solid #ffd700 !important;
+    color: #fff !important;
+}
+
+.theme-chinese .link-tags a:hover {
+    background: #ffd700 !important;
+    color: #8b0000 !important;
+}
+
+/* Campaign Specifics */
 .theme-chinese .campaign-note,
 .theme-chinese .campaign-note a {
     color: #ffd700 !important;
 }
 
-/* Shop Info Section Theme Override */
-.theme-chinese .info-section .glass-panel {
-    background: #a40000 !important;
-    border: 4px solid #ffd700 !important;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4) !important;
-}
-
-.theme-chinese .info-section h3 {
-    color: #ffd700 !important;
-    font-family: 'Ma Shan Zheng', cursive !important;
-}
-
-.theme-chinese .info-section th,
-.theme-chinese .info-section td,
-.theme-chinese .info-section p,
-.theme-chinese .info-section span,
-.theme-chinese .info-section div {
+/* Forms & Filters */
+.theme-chinese input,
+.theme-chinese select,
+.theme-chinese textarea {
+    background: #500000 !important;
+    border: 1px solid #ffd700 !important;
     color: #fff !important;
 }
 
-.theme-chinese .info-section a {
+.theme-chinese .btn-filter {
+    background: #500000;
     color: #ffd700 !important;
-    text-decoration: underline;
+    border: 1px solid #ffd700;
 }
 
+.theme-chinese .btn-filter.active,
+.theme-chinese .btn-filter:hover {
+    background: #ffd700;
+    color: #8b0000 !important;
+}
+
+/* Tables */
+.theme-chinese table th {
+    background-color: #8b0000 !important;
+    color: #ffd700 !important;
+    border-bottom: 2px solid #ffd700 !important;
+}
+
+.theme-chinese table td {
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3) !important;
+}
+
+/* Specialized Inner Elements */
 .theme-chinese .info-safety-row,
 .theme-chinese .info-service-row>div {
-    background: #8b0000 !important;
-    border: 2px solid #ffd700 !important;
+    background: #600000 !important;
+    border: 1px solid #ffd700 !important;
 }
 
-.theme-chinese .info-section .text-muted {
-    color: #ffcccc !important;
+/* Product/Shop Specifics */
+.theme-chinese .product-card h3 {
+    color: #ffd700 !important;
+}
+
+
+/* Purchase Benefits & Support Fixes */
+.theme-chinese .support-promo {
+    background: rgba(139, 0, 0, 0.95) !important;
+    border: 4px solid #ffd700 !important;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4) !important;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.theme-chinese .support-title {
+    color: #ffd700 !important;
+    font-family: 'Ma Shan Zheng', cursive !important;
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.theme-chinese .support-subtitle {
+    color: #fff !important;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.theme-chinese .support-desc {
+    color: #e5e5e5 !important;
+}
+
+.theme-chinese .support-table th {
+    background: #8b0000 !important;
+    color: #ffd700 !important;
+    border-bottom: 2px solid #ffd700 !important;
+}
+
+.theme-chinese .support-table td {
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3) !important;
+    color: #fff !important;
+}
+
+.theme-chinese .td-menu-item {
+    color: #ffd700 !important;
+    font-weight: bold;
+}
+
+.theme-chinese .td-menu-sub {
+    color: #ccc !important;
+}
+
+.theme-chinese .td-regular {
+    color: #e5e5e5 !important;
+}
+
+.theme-chinese .td-support {
+    color: #ffd700 !important;
+    font-weight: bold;
+}
+
+.theme-chinese .td-support-sub {
+    color: #ccc !important;
+}
+
+
+/* Bicycle Lineup Fixes */
+.theme-chinese .bicycle-item {
+    background: rgba(139, 0, 0, 0.95) !important;
+    border: 2px solid #ffd700 !important;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.theme-chinese .bicycle-item h3 a {
+    color: #ffd700 !important;
+}
+
+.theme-chinese .bicycle-item p {
+    color: #fff !important;
+}
+
+.theme-chinese .bicycle-note p,
+.theme-chinese .bicycle-note a {
+    color: #ffd700 !important;
 }
