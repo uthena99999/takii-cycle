@@ -804,6 +804,10 @@ body.theme-default .nav-list a:hover::after {
     }
 
     /* Visibility Utilities for Themes */
+    .text-accent-default {
+        color: var(--color-accent);
+    }
+
     .text-white-default {
         color: #fff;
     }
@@ -1091,6 +1095,18 @@ body.theme-default .nav-list a:hover::after {
 
 .keys-notice li:last-child {
     margin-bottom: 0;
+}
+
+.bento-act-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+.bento-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .keys-notice small {

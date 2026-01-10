@@ -28,6 +28,7 @@ body.theme-egypt {
     font-weight: 700;
     border: 1px solid transparent;
     padding: 5px 15px;
+    white-space: nowrap;
 }
 
 .theme-egypt .nav-list a:hover {

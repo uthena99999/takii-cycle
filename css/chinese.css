@@ -34,6 +34,7 @@ body.theme-chinese {
     padding: 5px 15px;
     margin: 0 5px;
     border: 1px solid #ffd700;
+    white-space: nowrap;
 }
 
 .theme-chinese .nav-list a:hover {
@@ -96,7 +97,7 @@ body.theme-chinese {
 
 .theme-chinese .btn-main {
     background: #ffd700;
-    color: #8b0000;
+    color: #8b0000 !important;
     border-radius: 50px;
     font-weight: 900;
     border: 4px solid #8b0000;
@@ -109,7 +110,7 @@ body.theme-chinese {
 
 .theme-chinese .btn-main:hover {
     background: #fff;
-    color: #a40000;
+    color: #a40000 !important;
 }
 
 /* Hero Button Fix */

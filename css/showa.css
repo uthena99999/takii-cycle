@@ -143,6 +143,12 @@ body.theme-showa {
     font-family: 'Zen Old Mincho', serif;
 }
 
+.theme-showa .bento-title {
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 1.8rem;
+    /* Smaller to fit grid */
+}
+
 .theme-showa .bento-label {
     background: #2a6ed9;
     color: #fff;

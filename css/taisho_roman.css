@@ -110,7 +110,7 @@ body.theme-taisho_roman::before {
 .theme-taisho_roman .btn-main {
     background: #800020;
     /* Burgundy */
-    color: #fff;
+    color: #fff !important;
     border: 1px solid #e6b422;
     font-family: 'Kaisei Decol', serif;
     font-weight: 700;
@@ -125,7 +125,7 @@ body.theme-taisho_roman::before {
 
 .theme-taisho_roman .btn-main:hover {
     background: #600018;
-    color: #fff;
+    color: #fff !important;
     /* Ensure text visible */
     transform: translate(2px, 2px);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
